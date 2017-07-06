@@ -1,0 +1,3 @@
+# Data Problems
+
+* information missing where original list had information: the `publication` table sometimes states `[s.n.]` (sine nomine) for publisher and/or `[s.l.]` (sine loco) for publication location, while the original list does have publisher and location information. E.g. OCR-result from original list: `Mit uns zieht die neue Zeit! Düsseldorf: Westdt. Verlagsdr. 1930.`, but `publication statement` in `publication` table: `[s. l.] @ : [s. n.] @, 1920`

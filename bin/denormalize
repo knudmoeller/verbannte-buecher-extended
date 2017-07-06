@@ -1,0 +1,133 @@
+#! /usr/bin/env ruby
+
+require_relative "../lib/denormalize.rb"
+
+unless ARGV.count == 1
+  puts "usage: ruby denormalize.rb DATA_FOLDER"
+  exit
+end
+
+conf = {
+  :sources => {
+    :list => "list.xml" ,
+    :people => "person.csv" ,
+    :publication => "publication.csv" ,
+    :mapping => "publicationPerson.csv"
+  } ,
+  :output_json => "verbannte_buecher_neu.json" ,
+  :namespaces => {
+    :base => "http://daten.berlin.de/verbannte_buecher/" ,
+  } ,
+  :provenances => {
+    :dnb => "DNB Linked Data" ,
+    :orig => "Original List 'Verbannte Bücher'"
+  } ,
+  :vocabs => {
+    :vb => {
+      "ss_flag": {
+        "@type": "xsd:boolean"
+      } ,
+      "page_number_in_ocr_document": {
+        "@type": "xsd:integer"
+      },
+      "ocr_result": {
+        "@type": "xsd:string"
+      },
+      "corrections_after_1938": {
+        "@type": "xsd:string"
+      }
+    } ,
+    :owl => {
+      "sameAs": {
+        "@type": "@id",
+        "@id": "http://www.w3.org/2002/07/owl#sameAs"
+      }
+    } ,
+    :dct => {
+      "provenance": {
+        "@type": "xsd:string",
+        "@id": "http://purl.org/dc/terms/provenance"
+      }
+    }
+  }
+}
+
+conf[:vocabs][:vb].keys.each do |term|
+  conf[:vocabs][:vb][term]["@id"] = "#{conf[:namespaces][:base]}vocab/#{term}"
+end
+
+conf[:namespaces][:publication] = "#{conf[:namespaces][:base]}publication/"
+conf[:namespaces][:person] = "#{conf[:namespaces][:base]}person/"
+conf[:data_folder] = ARGV[0]
+
+denormalizer = Denormalizer.new({
+  :conf => conf
+})
+denormalizer.read_sources
+denormalizer.serialize
+
+# PUBLICATION = CONF[:namespaces][:publication]
+# PERSON = CONF[:namespaces][:person]
+
+
+# puts "reading publications ..."
+# publications_by_id = Hash.new
+# publications_by_row = Hash.new
+# CSV.foreach(CONF[:publication_csv], { :headers => true }) do |row|
+#   id = row['id']
+#   publications_by_id[id] = row.to_hash
+#   row_ref = row['list_row']
+#   publications_by_row[row_ref] = row.to_hash
+# end
+
+# puts "reading people ..."
+# people = Hash.new
+# CSV.foreach(CONF[:people_csv], { :headers => true }) do |row|
+#   id = row['id']
+#   people[id] = row.to_hash
+# end
+
+# puts "reading mapping ..."
+# CSV.foreach(CONF[:mapping_csv], { :headers => true }) do |row|
+#   publication_id = row['publication_id']
+#   person_id = row['person_id']
+#   role = row['role']
+#   key = ( role.eql?("aut") ? :authors : :editors )
+#   unless publications[publication_id][key]
+#     publications[publication_id][key] = []
+#   end
+#   publications[publication_id][key] << people[person_id]
+# end
+
+# puts "writing json ..."
+# output_publications = []
+# # Hash[list.to_a[0..10]].each do |id, publication|
+# list.each do |id, publication|
+#   category = categorize_list_entry(publication)
+
+#   case category
+#   when :publication
+#     title_gnd = publication['title_gnd']
+#     title_gnd_id = title_gnd.split("/").pop
+#     title_gnd
+#   else
+#   end
+
+#   # next unless (gnd = publication['gnd'])
+#   # title_gnd_id = gnd.split("/").pop
+#   # pub_id = "#{PUBLICATION}p_#{gnd_id}"
+#   # title = publication["title"]
+#   # ld_publication = {
+#   #   "@id" => pub_id ,
+#   #   "@type" => CONF[:publication_settings][:type] ,
+#   #   CONF[:publication_settings][:title] => title
+#   # }
+#   # output_publications << ld_publication
+# end
+# json = {
+#   "@context" => CONF[:publication_settings][:context] ,
+#   "publications" => output_publications
+# }
+# File.open(CONF[:output_json], "w") do |file|
+#   file.puts (JSON.pretty_generate(json))
+# end

@@ -1,0 +1,4123 @@
+{
+  "@context": [
+    "http://schema.org",
+    {
+      "ss_flag": {
+        "@type": "xsd:boolean",
+        "@id": "http://daten.berlin.de/verbannte_buecher/vocab/ss_flag"
+      },
+      "page_number_in_ocr_document": {
+        "@type": "xsd:integer",
+        "@id": "http://daten.berlin.de/verbannte_buecher/vocab/page_number_in_ocr_document"
+      },
+      "ocr_result": {
+        "@type": "xsd:string",
+        "@id": "http://daten.berlin.de/verbannte_buecher/vocab/ocr_result"
+      },
+      "corrections_after_1938": {
+        "@type": "xsd:string",
+        "@id": "http://daten.berlin.de/verbannte_buecher/vocab/corrections_after_1938"
+      },
+      "sameAs": {
+        "@type": "@id",
+        "@id": "http://www.w3.org/2002/07/owl#sameAs"
+      },
+      "provenance": {
+        "@type": "xsd:string",
+        "@id": "http://purl.org/dc/terms/provenance"
+      }
+    }
+  ],
+  "@type": [
+    "ItemList",
+    "CreativeWork"
+  ],
+  "name": "List der Verbannten Bücher",
+  "itemListOrder": "http://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5886,
+  "itemListElement": [
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "33",
+      "ocr_result": "Erinnerungen der Miss Barbara. Paris: Kuriosa-Verl. 1925.",
+      "sameAs": [
+        "http://d-nb.info/573035792"
+      ],
+      "@type": "CreativeWork",
+      "name": "Erinnerungen der Miss Barbara",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kuriosa-Verlag",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Paris",
+          "sameAs": [
+            "http://sws.geonames.org/2988507/"
+          ]
+        }
+      },
+      "datePublished": "1925"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "166",
+      "ocr_result": "Zadek, Ignaz: Frauenleiden. Berlin: Vorwärts 1917.",
+      "sameAs": [
+        "http://d-nb.info/363127429"
+      ],
+      "@type": "CreativeWork",
+      "name": "Frauenleiden",
+      "author": {
+        "@type": "Person",
+        "name": "Ignaz Zadek",
+        "givenName": "Ignaz",
+        "familyName": "Zadek",
+        "gender": "male",
+        "birthDate": "1858-02-14",
+        "deathDate": "1931-07-17",
+        "description": "Dt. Arzt, sozialdemokrat. Politiker",
+        "sameAs": [
+          "http://d-nb.info/gnd/124963463",
+          "http://viaf.org/viaf/280276284"
+        ],
+        "alternateName": [
+          "I. Zadek"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Posen",
+          "sameAs": [
+            "http://d-nb.info/gnd/4046868-9"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://d-nb.info/gnd/4005728-8"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Vorwärts",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1917"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "46",
+      "ocr_result": "Gilbert, Hubert Ernst: Larissa. Berlin: Dom-Verl. 1930.",
+      "sameAs": [
+        "http://d-nb.info/573463034"
+      ],
+      "@type": "CreativeWork",
+      "name": "Larissa",
+      "author": {
+        "@type": "Person",
+        "givenName": "Hubert Ernst",
+        "familyName": "Gilbert",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/126297061"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dom-Verlag",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "11",
+      "ocr_result": "Vom Reichstagsbrand zur Entfachung des Weltkriegsbrandes. Hrsg. unter der Red. v. G. Friedrich u. F. Lang.— Paris: Éditions Prométhée (1938).",
+      "sameAs": [
+        "http://d-nb.info/993450741"
+      ],
+      "@type": "CreativeWork",
+      "name": "Vom Reichstagsbrand zur Entfachung des Weltkriegsbrandes",
+      "editor": {
+        "@type": "Person",
+        "name": "Jakob Rosner",
+        "givenName": "Jakob",
+        "familyName": "Rosner",
+        "gender": "male",
+        "birthDate": "1890-03-25",
+        "deathDate": "1970-06-18",
+        "sameAs": [
+          "http://d-nb.info/gnd/126857059",
+          "http://viaf.org/viaf/65011999"
+        ],
+        "alternateName": [
+          "Bobby Rosner",
+          "Franz Lang",
+          "F. Lang"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Sniatyn"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://d-nb.info/gnd/4066009-6"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Editions Prométhée",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Paris",
+          "sameAs": [
+            "http://sws.geonames.org/2988507/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "41",
+      "ocr_result": "Riedinender, Egon: Kulturgeschichte der Neuzeit. München: Beck 1927/31.",
+      "sameAs": [
+        "http://d-nb.info/992348811"
+      ],
+      "@type": "CreativeWork",
+      "name": "Kulturgeschichte der Neuzeit",
+      "author": {
+        "@type": "Person",
+        "name": "Egon Friedell",
+        "givenName": "Egon",
+        "familyName": "Friedell",
+        "gender": "male",
+        "birthDate": "1878-01-21",
+        "deathDate": "1938-03-16",
+        "sameAs": [
+          "http://d-nb.info/gnd/118535560",
+          "http://viaf.org/viaf/68923843",
+          "http://id.loc.gov/authorities/names/n84225416"
+        ],
+        "alternateName": [
+          "Egon Fridell",
+          "Egon Friedmann",
+          "Egon Friedländer"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://d-nb.info/gnd/4066009-6"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://d-nb.info/gnd/4066009-6"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zweitausendeins",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Frankfurt, M.",
+          "sameAs": [
+            "http://sws.geonames.org/2925533/"
+          ]
+        }
+      },
+      "datePublished": "2009"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "156",
+      "ocr_result": "Wahrmund: Gericht über Hugenberg. Dillingen: Manz 1932.",
+      "sameAs": [
+        "http://d-nb.info/576857475"
+      ],
+      "@type": "CreativeWork",
+      "name": "Gericht über Hugenberg",
+      "author": {
+        "@type": "Person",
+        "name": "Wahrmund",
+        "sameAs": [
+          "http://d-nb.info/gnd/124264980",
+          "http://viaf.org/viaf/28000217"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Manz",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Dillingen",
+          "sameAs": [
+            "http://sws.geonames.org/2936977/"
+          ]
+        }
+      },
+      "datePublished": "1932"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "12",
+      "ocr_result": "Bloch, Chajim: Priester der Liebe. Wien: Amalthea-Verl. 1930.",
+      "sameAs": [
+        "http://d-nb.info/572429983"
+      ],
+      "@type": "CreativeWork",
+      "name": "Priester der Liebe",
+      "author": {
+        "@type": "Person",
+        "name": "Chajim Bloch",
+        "givenName": "Chajim",
+        "familyName": "Bloch",
+        "gender": "male",
+        "birthDate": "1881-06-27",
+        "deathDate": "1973-01-23",
+        "description": "Berlin, Frankfurt, Wien, New York (Wirkungsorte); Rabbiner ungar. Herkunft",
+        "sameAs": [
+          "http://d-nb.info/gnd/118511734",
+          "http://viaf.org/viaf/68907862"
+        ],
+        "alternateName": [
+          "Ch. Bloch",
+          "Hayim Bloch",
+          "H. Bloch"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Nagy-Bocskó"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "New York, NY",
+          "sameAs": [
+            "http://d-nb.info/gnd/4042011-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Amalthea-Verlag",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "34",
+      "ocr_result": "Espe, Walter Maria: Das Buch der NSDAP. Berlin: Schönfeld 1934.",
+      "sameAs": [
+        "http://d-nb.info/579360059"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das Buch der NSDAP",
+      "author": {
+        "@type": "Person",
+        "givenName": "Walter Maria",
+        "familyName": "Espe",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/126337438"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Schönfeld",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "9",
+      "ocr_result": "Kaiser, Georg: Der Soldat Tanaka. Schauspiel. — Zürich, New York: Oprecht (1940).",
+      "sameAs": [
+        "http://d-nb.info/992486149"
+      ],
+      "@type": "CreativeWork",
+      "name": "Der Soldat Tanaka. Schauspiel.",
+      "author": {
+        "@type": "Person",
+        "name": "Georg Kaiser",
+        "givenName": "Georg",
+        "familyName": "Kaiser",
+        "gender": "male",
+        "birthDate": "1878-11-25",
+        "deathDate": "1945-06-04",
+        "description": "Dt. expressionistischer Schriftsteller",
+        "sameAs": [
+          "http://d-nb.info/gnd/118559427",
+          "http://viaf.org/viaf/64044776",
+          "http://id.loc.gov/authorities/names/n50045090"
+        ],
+        "alternateName": [
+          "Gkeornk Kai͏̈zer"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Magdeburg",
+          "sameAs": [
+            "http://d-nb.info/gnd/4036934-1"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Ascona",
+          "sameAs": [
+            "http://d-nb.info/gnd/4003204-8"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Oprecht",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Zürich {[u.a.]",
+          "sameAs": [
+            "http://sws.geonames.org/2657896/"
+          ]
+        }
+      },
+      "datePublished": "1940"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "140",
+      "ocr_result": "Sowjetunion, 15 Jahre ~. o. O. 1932.",
+      "sameAs": [
+        "http://d-nb.info/576462470"
+      ],
+      "@type": "CreativeWork",
+      "name": "Sowjetunion, 15 Jahre ~.",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      }
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "12",
+      "ocr_result": "Lhande, Pierre: Bilbilis, die versunkene Stadt. — Einsiedeln: Verlagsanstalt Benziger & Co. [1930].",
+      "sameAs": [
+        "http://d-nb.info/574888187"
+      ],
+      "@type": "CreativeWork",
+      "name": "Bilbilis, die versunkene Stadt",
+      "editor": {
+        "@type": "Person",
+        "name": "Else Werkmann",
+        "givenName": "Else",
+        "familyName": "Werkmann",
+        "gender": "female",
+        "birthDate": "1897-00-00",
+        "sameAs": [
+          "http://d-nb.info/gnd/104529636",
+          "http://viaf.org/viaf/7822399"
+        ],
+        "alternateName": [
+          "Else von Werkmann",
+          "Else Rutzen von Werkmann",
+          "Else Rutzen Werkmann von Hohensalzburg",
+          "Else W. von Hohensalzburg",
+          "Else Werkmann von Hohensalzburg",
+          "Else Werkmann von Hohensalzburg"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlagsanstalt Benziger & Co.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Einsiedeln",
+          "sameAs": [
+            "http://sws.geonames.org/2660925/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "14",
+      "ocr_result": "Borée, Karl Friedrich: Quartier an der Mosel. Frankfurt: Rütten & Loening 1936.",
+      "sameAs": [
+        "http://d-nb.info/572479921"
+      ],
+      "@type": "CreativeWork",
+      "name": "Quartier an der Mosel",
+      "author": {
+        "@type": "Person",
+        "name": "Karl Friedrich Borée",
+        "givenName": "Karl Friedrich",
+        "familyName": "Borée",
+        "gender": "male",
+        "birthDate": "1886-01-29",
+        "deathDate": "1964-07-28",
+        "description": "Dt. Schriftsteller, Novellist und Essayist",
+        "sameAs": [
+          "http://d-nb.info/gnd/118661779",
+          "http://viaf.org/viaf/42631751",
+          "http://id.loc.gov/authorities/names/nr98043418"
+        ],
+        "alternateName": [
+          "Karl Friedrich Boeters",
+          "Karl F. Borée"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Görlitz",
+          "sameAs": [
+            "http://d-nb.info/gnd/4021441-2"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Darmstadt",
+          "sameAs": [
+            "http://d-nb.info/gnd/4011077-1"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rütten & Loening",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Frankfurt a. M.",
+          "sameAs": [
+            "http://sws.geonames.org/2925533/"
+          ]
+        }
+      },
+      "datePublished": "1936"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "8",
+      "ocr_result": "Iros, Ernst: sämtliche Schriften.",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Neue Wege für die Frau"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Leo Weismantel, der Dichter und Kulturpolitiker"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Wesen und Dramaturgie des Films"
+        }
+      ],
+      "@type": "Collection",
+      "name": "Iros [wirkl. Name] s. Rosenstiel, Julius, Ernst: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "164",
+      "ocr_result": "Wolf, Victoria: Drei Tage. Zürich: Humanitas-Verl. 1937.",
+      "sameAs": [
+        "http://d-nb.info/992952921"
+      ],
+      "@type": "CreativeWork",
+      "name": "Drei Tage",
+      "author": {
+        "@type": "Person",
+        "name": "Victoria Wolf",
+        "givenName": "Victoria",
+        "familyName": "Wolf",
+        "gender": "female",
+        "birthDate": "1903-12-10",
+        "deathDate": "1992-09-16",
+        "description": "Amerikan. Schriftstellerin, Journalistin und Drehbuchautorin dt. Herkunft",
+        "sameAs": [
+          "http://d-nb.info/gnd/11744328X",
+          "http://viaf.org/viaf/56940290",
+          "http://id.loc.gov/authorities/names/no2006127447"
+        ],
+        "alternateName": [
+          "Victoria Trude Wolf",
+          "Victoria T. Wolf",
+          "Viktoria Wolf",
+          "Victoria Wolff",
+          "Viktoria Wolff",
+          "Hans Baysen",
+          "Eleanor Colling",
+          "Eleanor Collins",
+          "Claudia Martell",
+          "Victoria Victor"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Heilbronn",
+          "sameAs": [
+            "http://d-nb.info/gnd/4024025-3"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Los Angeles, Calif.",
+          "sameAs": [
+            "http://d-nb.info/gnd/4036361-2"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Humanitas-Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Zürich",
+          "sameAs": [
+            "http://sws.geonames.org/2657896/"
+          ]
+        }
+      },
+      "datePublished": "1937"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "94",
+      "ocr_result": "Mendelssohn, Peter: Das Haus Cosinsky. Zürich: Oprecht & Helbling 1934.",
+      "sameAs": [
+        "http://d-nb.info/992676215"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das Haus Cosinsky",
+      "editor": {
+        "@type": "Person",
+        "givenName": "...",
+        "familyName": "Lépine",
+        "sameAs": [
+          "http://d-nb.info/gnd/137209509"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Oprecht & Helbling",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Zürich",
+          "sameAs": [
+            "http://sws.geonames.org/2657896/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "7",
+      "ocr_result": "Guenther, Harald: Arbeiterverrat der Emigranten. — Berlin: Harder [um 1934].\n",
+      "sameAs": [
+        "http://d-nb.info/573602026"
+      ],
+      "@type": "CreativeWork",
+      "name": "Arbeiterverrat der Emigranten",
+      "author": {
+        "@type": "Person",
+        "givenName": "Harald",
+        "familyName": "Günther",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/105871346"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Harder",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "48",
+      "ocr_result": "Grassmann, Peter: Kampf dem Marxismus!? Berlin: Allgem. dt. Gewerkschaftsbund 1933.",
+      "sameAs": [
+        "http://d-nb.info/573537232"
+      ],
+      "@type": "CreativeWork",
+      "name": "Kampf dem Marxismus!?",
+      "author": {
+        "@type": "Person",
+        "name": "Peter Grassmann",
+        "givenName": "Peter",
+        "familyName": "Grassmann",
+        "gender": "male",
+        "birthDate": "1873-00-00",
+        "deathDate": "1939-00-00",
+        "description": "war Zweiter Vorsitzender des Allgemeinen Deutschen Gewerkschaftsbundes und  Reichstagsabgeordneter für die Sozialdemokratische Partei; Geburtsort: München; Wirkungsort: Berlin; Dt. Buchdrucker, Gewerkschaftsfunktionär und Politiker",
+        "sameAs": [
+          "http://d-nb.info/gnd/13000216X",
+          "http://viaf.org/viaf/70024895"
+        ],
+        "alternateName": [
+          "Peter Graßmann",
+          "P. Graßmann"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "München",
+          "sameAs": [
+            "http://d-nb.info/gnd/4127793-4"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://d-nb.info/gnd/4005728-8"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlagsges. d. Allg. Deutschen Gewerkschaftsbundes",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "107",
+      "ocr_result": "Pankok, Otto: Die Passion in 60 Bildern. Berlin: Kiepenheuer 1936.",
+      "sameAs": [
+        "http://d-nb.info/362290539"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Passion in 60 Bildern",
+      "author": {
+        "@type": "Person",
+        "name": "Otto Pankok",
+        "givenName": "Otto",
+        "familyName": "Pankok",
+        "gender": "male",
+        "birthDate": "1893-06-06",
+        "deathDate": "1966-10-10",
+        "description": "Mülheim/Ruhr, Düsseldorf, Hünxe-Esselt (Wirkungsorte); Dt. Maler, Grafiker und Bildhauer",
+        "sameAs": [
+          "http://d-nb.info/gnd/118591533",
+          "http://viaf.org/viaf/76338468",
+          "http://id.loc.gov/authorities/names/n82160914"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Mülheim an der Ruhr",
+          "sameAs": [
+            "http://d-nb.info/gnd/4040475-4"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wesel",
+          "sameAs": [
+            "http://d-nb.info/gnd/4065697-4"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kiepenheuer",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1936"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "73",
+      "ocr_result": "Klose, Fritz: Marschier oder krepier! Berlin: Traditionsverl. Kolk 1930.",
+      "sameAs": [
+        "http://d-nb.info/574357025"
+      ],
+      "@type": "CreativeWork",
+      "name": "Marschier oder krepier!",
+      "author": {
+        "@type": "Person",
+        "givenName": "Fritz",
+        "familyName": "Klose",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/101224079"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlag Tradition",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "0",
+      "ocr_result": "Fitzner, Erich: Die Ruten-Redoute in Frau Birkheims Tanzschule. Leipzig 1929.",
+      "sameAs": [
+        "http://d-nb.info/573357749"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Ruten-Redoute in Frau Birkheims Tanzschule",
+      "author": {
+        "@type": "Person",
+        "givenName": "Erich",
+        "familyName": "Fitzner",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/100474489"
+        ]
+      }
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "87",
+      "ocr_result": "Loehndorff, Ernst Friedrich: Afrika weint. Leipzig: Grethlein 1930. — Bremen: Schünemann 1933.",
+      "sameAs": [
+        "http://d-nb.info/574900187"
+      ],
+      "@type": "CreativeWork",
+      "name": "Afrika weint",
+      "author": {
+        "@type": "Person",
+        "givenName": "Ernst Friedrich",
+        "familyName": "Löhndorff",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/11715119X"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Grethlein & Co.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Leipzig",
+          "sameAs": [
+            "http://sws.geonames.org/2879139/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "107",
+      "ocr_result": "Papke, Käthe: Fürst Widukind, der Sachsenführer. Neumünster: Christopherus-Verl. 1936.",
+      "sameAs": [
+        "http://d-nb.info/57561160X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Fürst Widukind, der Sachsenführer",
+      "author": {
+        "@type": "Person",
+        "name": "Käthe Papke",
+        "givenName": "Käthe",
+        "familyName": "Papke",
+        "gender": "female",
+        "birthDate": "1872-00-00",
+        "deathDate": "1951-00-00",
+        "description": "Dt. Schriftstellerin, Verfasserin christlicher historischer Romane",
+        "sameAs": [
+          "http://d-nb.info/gnd/121344134",
+          "http://viaf.org/viaf/69782173"
+        ],
+        "alternateName": [
+          "Käte Papke"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Cleveland"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wernigerode"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Christophorus-Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Neumünster",
+          "sameAs": [
+            "http://sws.geonames.org/2864475/"
+          ]
+        }
+      },
+      "datePublished": "1936"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "44",
+      "ocr_result": "Geldmacher, Marta: Das Erlöserkind. Düsseldorf: Lebensborn-Verl. 1930.",
+      "sameAs": [
+        "http://d-nb.info/579928748"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das Erlöserkind",
+      "editor": {
+        "@type": "Person",
+        "givenName": "Karl",
+        "familyName": "Klotz",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/107169975"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lebensborn-Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Düsseldorf, Oststr. 76",
+          "sameAs": [
+            "http://sws.geonames.org/2934246/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "125",
+      "ocr_result": "Salomon, Gottfried: Proudhon und der Sozialismus. Berlin: Cassirer 1920.",
+      "sameAs": [
+        "http://d-nb.info/575688238"
+      ],
+      "@type": "CreativeWork",
+      "name": "Proudhon und der Sozialismus",
+      "editor": {
+        "@type": "Person",
+        "name": "Lisbeth Hoffnung",
+        "givenName": "Lisbeth",
+        "familyName": "Hoffnung",
+        "gender": "female",
+        "sameAs": [
+          "http://d-nb.info/gnd/126848165",
+          "http://viaf.org/viaf/25607958"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "P. Cassirer",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1920"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "120",
+      "ocr_result": "Robert, Friedrich: Knabe oder Mädchen nach Wunsch u. Wahl der Eltern. Berlin: Linsen-Verl. 1919.",
+      "sameAs": [
+        "http://d-nb.info/579709922"
+      ],
+      "@type": "CreativeWork",
+      "name": "Knabe oder Mädchen nach Wunsch u. Wahl der Eltern",
+      "author": {
+        "@type": "Person",
+        "name": "Christian Friedrich Robert Ehlers",
+        "givenName": "Christian Friedrich Robert",
+        "familyName": "Ehlers",
+        "gender": "male",
+        "birthDate": "1858-00-00",
+        "description": "Verf. populärwissenschaftl., überw. medizin. Werke",
+        "sameAs": [
+          "http://d-nb.info/gnd/132873192",
+          "http://viaf.org/viaf/13483720",
+          "http://id.loc.gov/authorities/names/no2007052729"
+        ],
+        "alternateName": [
+          "Friedrich R. Ehlers",
+          "Christ. Friedr. Robert Ehlers",
+          "Christ. Robert Friedrich Ehlers",
+          "Christ. Friedrich Robert Ehlers",
+          "Friedrich Robert Ehlers",
+          "Robert Ehlers",
+          "Friedrich Robert"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Hamburg",
+          "sameAs": [
+            "http://d-nb.info/gnd/4023118-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rudolph'sche Verlbh.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Dresden",
+          "sameAs": [
+            "http://sws.geonames.org/2935022/"
+          ]
+        }
+      },
+      "datePublished": "1926"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "111",
+      "ocr_result": "Policky, Kamillo: Das werdende Recht. Wien: Schölers Verl. 1938.",
+      "sameAs": [
+        "http://d-nb.info/575409665"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das werdende Recht",
+      "author": {
+        "@type": "Person",
+        "givenName": "Kamillo",
+        "familyName": "Policky",
+        "sameAs": [
+          "http://d-nb.info/gnd/126654867"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Schölers Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien [XIX, Döblinger Hauptstr. 3]",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "5",
+      "ocr_result": "Azana, Manuel. — Azana spricht. Paris: Ed. du Carrefour 1937.",
+      "sameAs": [
+        "http://d-nb.info/572090617"
+      ],
+      "@type": "CreativeWork",
+      "name": "Azana, Manuel. — Azana spricht",
+      "author": {
+        "@type": "Person",
+        "name": "Manuel Azaña y Diaz",
+        "givenName": "Manuel",
+        "familyName": "Azaña y Diaz",
+        "gender": "male",
+        "birthDate": "1880-01-10",
+        "deathDate": "1940-11-03",
+        "description": "Span. Schriftsteller u. Politiker",
+        "sameAs": [
+          "http://d-nb.info/gnd/118505319",
+          "http://viaf.org/viaf/22156967",
+          "http://id.loc.gov/authorities/names/n79093003"
+        ],
+        "alternateName": [
+          "Manuel A. y Diaz",
+          "Manuel Azaña"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Madrid",
+          "sameAs": [
+            "http://d-nb.info/gnd/4036862-2"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Montauban"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Editions du Carrefour",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Paris",
+          "sameAs": [
+            "http://sws.geonames.org/2988507/"
+          ]
+        }
+      },
+      "datePublished": "1937"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "106",
+      "ocr_result": "Otto, Luise: Neue Bahnen. Leipzig: Günther 1864.",
+      "sameAs": [
+        "http://d-nb.info/012822620"
+      ],
+      "@type": "CreativeWork",
+      "name": "Neue Bahnen",
+      "editor": {
+        "@type": "Person",
+        "sameAs": [
+          "http://d-nb.info/gnd/117325-X"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Braun",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Karlsruhe",
+          "sameAs": [
+            "http://sws.geonames.org/2892794/"
+          ]
+        }
+      },
+      "datePublished": "1866-1919"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "85",
+      "ocr_result": "Liebe und Leidenschaft. Flagell.-erot. Roman. o. O. 1930.",
+      "sameAs": [
+        "http://d-nb.info/574602461"
+      ],
+      "@type": "CreativeWork",
+      "name": "Liebe und Leidenschaft. Flagell.-erot. Roman.",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      }
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "23",
+      "ocr_result": "Dammann, Erich: Harnröhrenleiden. Dresden: Klio-Verl. 1913.",
+      "sameAs": [
+        "http://d-nb.info/580832686"
+      ],
+      "@type": "CreativeWork",
+      "name": "Harnröhrenleiden",
+      "author": {
+        "@type": "Person",
+        "givenName": "Erich",
+        "familyName": "Dammann",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/12769837X"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Klio-Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Dresden",
+          "sameAs": [
+            "http://sws.geonames.org/2935022/"
+          ]
+        }
+      },
+      "datePublished": "1913"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "103",
+      "ocr_result": "Noack, Victor: Die Untersten. Berlin: Der Syndikalist 1927.",
+      "sameAs": [
+        "http://d-nb.info/361959451"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Untersten",
+      "author": {
+        "@type": "Person",
+        "givenName": "Victor",
+        "familyName": "Noack",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/101623720"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlag Der Syndikalist",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1927"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "53",
+      "ocr_result": "Hammann, Otto: Die kommunistische Gesellschaft. Berlin: Schriftenvertriebsanstalt 1897.",
+      "sameAs": [
+        "http://d-nb.info/573991642"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die kommunistische Gesellschaft",
+      "author": {
+        "@type": "Person",
+        "name": "Otto Hammann",
+        "givenName": "Otto",
+        "familyName": "Hammann",
+        "gender": "male",
+        "birthDate": "1852-01-23",
+        "deathDate": "1928-06-18",
+        "description": "Dt. Politiker, Publizist, Pressereferent im Auswärtigen Amt von 1894-1916",
+        "sameAs": [
+          "http://d-nb.info/gnd/116440708",
+          "http://viaf.org/viaf/52441783",
+          "http://id.loc.gov/authorities/names/no2001073168"
+        ],
+        "alternateName": [
+          "O. Hammann"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Blankenhain",
+          "sameAs": [
+            "http://d-nb.info/gnd/4546114-4"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Fürstenberg/Havel",
+          "sameAs": [
+            "http://d-nb.info/gnd/4348908-4"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Wilhelmi",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1891"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "89",
+      "ocr_result": "Luetgebrune, Walter: Ein Kampf um Röhm. Diessen: Huber 1933.",
+      "sameAs": [
+        "http://d-nb.info/574925821"
+      ],
+      "@type": "CreativeWork",
+      "name": "Ein Kampf um Röhm",
+      "author": {
+        "@type": "Person",
+        "name": "Walter Luetgebrune",
+        "givenName": "Walter",
+        "familyName": "Luetgebrune",
+        "gender": "male",
+        "birthDate": "1879-00-00",
+        "deathDate": "1949-00-00",
+        "description": "Dt. Rechtsanwalt",
+        "sameAs": [
+          "http://d-nb.info/gnd/128653833",
+          "http://viaf.org/viaf/219659122",
+          "http://id.loc.gov/authorities/names/no95032310"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Lage",
+          "sameAs": [
+            "http://d-nb.info/gnd/2000214-2"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Mittenwald"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Huber",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Diessen",
+          "sameAs": [
+            "http://sws.geonames.org/2756859/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "67",
+      "ocr_result": "Kabel, Walter: Stürme um Kap Marga. Berlin: Verl. mod. Lektüre 1934.",
+      "sameAs": [
+        "http://d-nb.info/580318524"
+      ],
+      "@type": "CreativeWork",
+      "name": "Stürme um Kap Marga",
+      "author": {
+        "@type": "Person",
+        "name": "Walther Kabel",
+        "givenName": "Walther",
+        "familyName": "Kabel",
+        "gender": "male",
+        "birthDate": "1878-00-00",
+        "deathDate": "1935-00-00",
+        "description": "Unterhaltungsschriftsteller",
+        "sameAs": [
+          "http://d-nb.info/gnd/118714392",
+          "http://viaf.org/viaf/35251223",
+          "http://id.loc.gov/authorities/names/no90019316"
+        ],
+        "alternateName": [
+          "Max Schraut",
+          "W. Belka",
+          "Walther Bekal"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Danzig",
+          "sameAs": [
+            "http://d-nb.info/gnd/4011039-4"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Kleinmachnow",
+          "sameAs": [
+            "http://d-nb.info/gnd/4031035-8"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verl. moderner Lektüre",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "156",
+      "ocr_result": "Waksow, Viktor: 7 Tage, die Japan erschütterten. Berlin: Führer-Verl. 1926.",
+      "sameAs": [
+        "http://d-nb.info/576858846"
+      ],
+      "@type": "CreativeWork",
+      "name": "Sieben Tage, die Japan erschütterten",
+      "editor": {
+        "@type": "Person",
+        "name": "Aleksandr Lozovskij",
+        "givenName": "Aleksandr",
+        "familyName": "Lozovskij",
+        "gender": "male",
+        "birthDate": "1878-03-16",
+        "deathDate": "1952-08-12",
+        "sameAs": [
+          "http://d-nb.info/gnd/104314591",
+          "http://viaf.org/viaf/49228372",
+          "http://id.loc.gov/authorities/names/n83012962"
+        ],
+        "alternateName": [
+          "S. Dridso-Losowski",
+          "S. A. Dridzo",
+          "Solomon Dridzo",
+          "Solomon A. Dridzo",
+          "Solomon Abramovič Dridzo",
+          "S. Dridzo-Losowski",
+          "A. Losowski",
+          "... Losowski",
+          "Alexander Losowski",
+          "Solomon A. Losowski",
+          "A. Losowsky",
+          "Alexander Losowsky",
+          "A. Lozovskij",
+          "Solomon A. Lozovskij",
+          "A. Lozovsky",
+          "A. Lozovzky"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Führer-Verlag",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1926"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "9",
+      "ocr_result": "Benjamin: Pfingstnacht. Wilhelmshagen: Wegwalt-Werkstatt 1914.",
+      "sameAs": [
+        "http://d-nb.info/578848376"
+      ],
+      "@type": "CreativeWork",
+      "name": "Pfingstnacht",
+      "author": {
+        "@type": "Person",
+        "name": "Benjamin",
+        "sameAs": [
+          "http://d-nb.info/gnd/127399631",
+          "http://viaf.org/viaf/10867385"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Wegwalt-Werkstatt",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wilhelmshagen",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1914"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "41",
+      "ocr_result": "Friedlaender, Salomo: Sämtliche Schriften.",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Unterm Leichentuch"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Unterm Leichentuch"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Logik"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Schwarz-weiss-rot"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Für Hunde und andere Menschen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "George Grosz"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Wie durch ein Prisma"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Katechismus der Magie"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Rosa, die schöne Schutzmannsfrau"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Schöpfer"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mein hundertster Geburtstag u. a. Grimassen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Graue Magie"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Tarzaniade"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Trappistenstreik u. a. Grotesken"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Philosoph Ernst Marcus als Nachfolger Kants"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mein Papa und die Jungfrau von Orléans nebst anderen Grotesken"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Anti-Freud"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Das widerspenstige Brautbett u. a. Grotesken"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Schöpferische Indifferenz"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Geheimnisse von Berlin"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Nur für Herrschaften"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Hat Erich Maria Remarque gelebt?"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Ich möchte bellen u. a. Grotesken"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kant für Kinder"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Bank der Spötter"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Hundert Bonbons"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Holzweg zurück oder Knackes Umgang mit Flöhen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Das Eisenbahnglück od. Der Anti-Freud"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Psychologie"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Biblianthropen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Schöpferische Indifferenz"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der neue Ibikus"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kant gegen Einstein"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Prosa"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Gesammelte Schriften"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der lachende Hiob und andere Grotesken"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Grotesken"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Philosophische Abhandlungen und Kritiken"
+        }
+      ],
+      "@type": "Collection",
+      "name": "Friedlaender, Salomo: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "87",
+      "ocr_result": "Londres, Albert: Bagno. Berlin: Laub 1924.",
+      "sameAs": [
+        "http://d-nb.info/57628601X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Bagno",
+      "editor": {
+        "@type": "Person",
+        "name": "Karl Otten",
+        "givenName": "Karl",
+        "familyName": "Otten",
+        "gender": "male",
+        "birthDate": "1889-07-29",
+        "deathDate": "1963-03-20",
+        "sameAs": [
+          "http://d-nb.info/gnd/118590723",
+          "http://viaf.org/viaf/7404511",
+          "http://id.loc.gov/authorities/names/n81117152"
+        ],
+        "alternateName": [
+          "Rhenanus"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Oberkrüchten",
+          "sameAs": [
+            "http://d-nb.info/gnd/7782973-6"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Muralto",
+          "sameAs": [
+            "http://d-nb.info/gnd/4101783-3"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "E. Laub'sche Verlh.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1924"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "13",
+      "ocr_result": "Makin, William J[ames]: Brigade of spies. — New York: Dutton 1938.",
+      "sameAs": [
+        "http://www.worldcat.org/oclc/1003526"
+      ],
+      "@type": "CreativeWork",
+      "name": "Brigade of spies",
+      "author": {
+        "name": "William James Makin",
+        "givenName": "William James",
+        "familyName": "Makin",
+        "sameAs": [
+          "http://d-nb.info/gnd/157761584"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dutton",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "New York",
+          "sameAs": [
+            "http://sws.geonames.org/5128581/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "96",
+      "ocr_result": "Mif, P.: Die kommunistische Partei Chinas im Kampfe um die Befreiung des chines. Volkes. Moskau: Verlagsgen. ausländ. Arbeiter 1937.",
+      "sameAs": [
+        "http://d-nb.info/57512573X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die kommunistische Partei Chinas im Kampfe um die Befreiung des chines. Volkes",
+      "author": {
+        "@type": "Person",
+        "name": "Pavel A. Mif",
+        "givenName": "Pavel A.",
+        "familyName": "Mif",
+        "gender": "male",
+        "birthDate": "1901-00-00",
+        "deathDate": "1939-00-00",
+        "sameAs": [
+          "http://d-nb.info/gnd/14086220X",
+          "http://viaf.org/viaf/111124803",
+          "http://id.loc.gov/authorities/names/n84179793"
+        ],
+        "alternateName": [
+          "Pavel Aleksandrovič Mif",
+          "Pavel Mif",
+          "P. A. Mif",
+          "P. Mif"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlagsgen. ausländ. Arbeiter in d. UdSSR",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Moskau",
+          "sameAs": [
+            "http://sws.geonames.org/524901/"
+          ]
+        }
+      },
+      "datePublished": "1937"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "130",
+      "ocr_result": "Schneider, Josef: Sämtliche Schriften.",
+      "@type": "Collection",
+      "name": "Schneider, Josef: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "67",
+      "ocr_result": "Kaff, Sigmund: Die Sozialisierung der Wirtschaft durch die Genossenschaften. Wien: Neue Erde 1920.",
+      "sameAs": [
+        "http://d-nb.info/573266891"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Sozialisierung der Wirtschaft durch die Genossenschaften",
+      "author": {
+        "@type": "Person",
+        "name": "Siegmund Kaff",
+        "givenName": "Siegmund",
+        "familyName": "Kaff",
+        "gender": "male",
+        "birthDate": "1864-03-13",
+        "deathDate": "1933-01-06",
+        "sameAs": [
+          "http://d-nb.info/gnd/138991537",
+          "http://viaf.org/viaf/69915749"
+        ],
+        "alternateName": [
+          "Sigmund Kaff"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Krumau",
+          "sameAs": [
+            "http://d-nb.info/gnd/4098732-2"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://d-nb.info/gnd/4066009-6"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "\"Neue Erde\"",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1920"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "12",
+      "ocr_result": "Michaelis, Cassie: sämtliche Schriften.\nZwei Schriften bereits in »Liste des schädlichen und unerwünschten Schrifttums« S. 95.\n",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Die braune Kultur"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "La haine brune"
+        }
+      ],
+      "@type": "Collection",
+      "name": "Michaelis, Cassie: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "166",
+      "ocr_result": "Zehder, Hugo: Wassily Kandinsky. Dresden: Kaemmerer 1920.",
+      "sameAs": [
+        "http://d-nb.info/363132813"
+      ],
+      "@type": "CreativeWork",
+      "name": "Wassily Kandinsky",
+      "author": {
+        "@type": "Person",
+        "givenName": "Hugo",
+        "familyName": "Zehder",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/107769301"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kaemmerer",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Dresden",
+          "sameAs": [
+            "http://sws.geonames.org/2935022/"
+          ]
+        }
+      },
+      "datePublished": "1920"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "137",
+      "ocr_result": "Sinne, Die fünf ~. Ihr Einfluss auf die Sexualität des Menschen. Bd 1—5. Wien: Verl. f. Kulturforschung 1930/32.",
+      "sameAs": [
+        "http://d-nb.info/560924623"
+      ],
+      "@type": "CreativeWork",
+      "name": "Sinne, Die fünf ~. Ihr Einfluss auf die Sexualität des Menschen. Bd 1—5",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlag f. Kulturforschg",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "NULL"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "143",
+      "ocr_result": "Stezki, A.: W. J. Lenin. Moskau: Verlagsgen. ausländ. Arbeiter 1934.",
+      "sameAs": [
+        "http://d-nb.info/577471031"
+      ],
+      "@type": "CreativeWork",
+      "name": "W. J. Lenin",
+      "author": {
+        "@type": "Person",
+        "givenName": "Aleksej Ivanovic",
+        "familyName": "Steckij",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/1015389678"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlagsgenossenschaft ausländ. Arbeiter in der UdSSR",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Moskau",
+          "sameAs": [
+            "http://sws.geonames.org/524901/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "2",
+      "ocr_result": "Birk, Friedrich: sämtliche Schriften.",
+      "@type": "Collection",
+      "name": "Birk, Friedrich: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "95",
+      "ocr_result": "Messner, Johannes: Dollfuss. Innsbruck: Tyrolia 1934.",
+      "sameAs": [
+        "http://d-nb.info/574664602"
+      ],
+      "@type": "CreativeWork",
+      "name": "Dollfuss",
+      "author": {
+        "@type": "Person",
+        "name": "Johannes Messner",
+        "givenName": "Johannes",
+        "familyName": "Messner",
+        "gender": "male",
+        "birthDate": "1891-00-00",
+        "deathDate": "1984-00-00",
+        "description": "Österr. kath. Theologe",
+        "sameAs": [
+          "http://d-nb.info/gnd/118581384",
+          "http://viaf.org/viaf/56580",
+          "http://id.loc.gov/authorities/names/n78014780"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Schwaz",
+          "sameAs": [
+            "http://d-nb.info/gnd/4053810-2"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://d-nb.info/gnd/4066009-6"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verl. Anst. Tyrolia",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Innsbruck",
+          "sameAs": [
+            "http://sws.geonames.org/2775220/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "10",
+      "ocr_result": "Strauss, Bruno: Fliegerschicksale. — Rostock 1938: Beckmann.",
+      "sameAs": [
+        "http://d-nb.info/576568899"
+      ],
+      "@type": "CreativeWork",
+      "name": "Fliegerschicksale",
+      "author": {
+        "@type": "Person",
+        "name": "Bruno Strauss",
+        "givenName": "Bruno",
+        "familyName": "Strauss",
+        "gender": "male",
+        "birthDate": "1900-00-00",
+        "sameAs": [
+          "http://d-nb.info/gnd/1034350072",
+          "http://viaf.org/viaf/300139550"
+        ],
+        "alternateName": [
+          "Bruno Hugo Waldemar Strauss"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Rostock",
+          "sameAs": [
+            "http://d-nb.info/gnd/4050610-1"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "[Selbstverl.]",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "[Rostock]",
+          "sameAs": [
+            "http://sws.geonames.org/2844588/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "5",
+      "ocr_result": "Eichen, Claus: sämtliche Schriften.\nEine Schrift bereits in »Liste des schädlichen und unerwünschten Schrifttums« S. 30.\n",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Rassenwahn"
+        }
+      ],
+      "@type": "Collection",
+      "name": "Eichen, Claus: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "50",
+      "ocr_result": "Gromann, W.: Die Volkswirtschaft der UdSSR. Berlin: Rowohlt 1927.",
+      "sameAs": [
+        "http://www.worldcat.org/oclc/257960174"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Volkswirtschaft der UdSSR",
+      "author": {
+        "name": "W. Groman",
+        "givenName": "W.",
+        "familyName": "Groman"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rowohlt",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1927"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "159",
+      "ocr_result": "Weitling, Wilhelm: Das Evangelium eines armen Sünders. München: Ernst 1894.",
+      "sameAs": [
+        "http://d-nb.info/363041214"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das Evangelium eines armen Sünders",
+      "author": {
+        "@type": "Person",
+        "name": "Wilhelm Weitling",
+        "givenName": "Wilhelm",
+        "familyName": "Weitling",
+        "gender": "male",
+        "birthDate": "1808-10-05",
+        "deathDate": "1871-01-24",
+        "description": "Dt. Frühsozialist",
+        "sameAs": [
+          "http://d-nb.info/gnd/118630652",
+          "http://viaf.org/viaf/45095616",
+          "http://id.loc.gov/authorities/names/n85339455"
+        ],
+        "alternateName": [
+          "Wilhelm C. Weitling",
+          "Wilhelm Christian Weitling"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Magdeburg",
+          "sameAs": [
+            "http://d-nb.info/gnd/4036934-1"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "New York City",
+          "sameAs": [
+            "http://d-nb.info/gnd/4042011-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ernst",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "München",
+          "sameAs": [
+            "http://sws.geonames.org/2867714/"
+          ]
+        }
+      },
+      "datePublished": "1894"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "50",
+      "ocr_result": "Grossmann, Rudolf: Liebe ohne Folgen. Stockholm: Internat. Bund f. Kontingentierung d. Bevölkerung 1919.",
+      "sameAs": [
+        "http://d-nb.info/574602313"
+      ],
+      "@type": "CreativeWork",
+      "name": "Liebe ohne Folgen",
+      "author": {
+        "@type": "Person",
+        "givenName": "Rudolf",
+        "familyName": "Grossmann",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/10149243X"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Intern. Bund f. Kontingentierung d. Bevölkerung",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Stockholm",
+          "sameAs": [
+            "http://sws.geonames.org/2673730/"
+          ]
+        }
+      },
+      "datePublished": "1919"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "6",
+      "ocr_result": "Fuernberg, Louis: Das Fest des Lebens. — Zürich, New York: Oprecht (1939)",
+      "sameAs": [
+        "http://d-nb.info/992416140"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das Fest des Lebens",
+      "editor": {
+        "@type": "Person",
+        "name": "Werner David Feist",
+        "givenName": "Werner David",
+        "familyName": "Feist",
+        "gender": "male",
+        "birthDate": "1909-12-03",
+        "deathDate": "1998-00-00",
+        "description": "Dt. Photograph in Kanada",
+        "sameAs": [
+          "http://d-nb.info/gnd/119360322",
+          "http://viaf.org/viaf/5739454",
+          "http://id.loc.gov/authorities/names/n96093902"
+        ],
+        "alternateName": [
+          "W. David Feist",
+          "David Feist",
+          "Warner David Feist"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Augsburg",
+          "sameAs": [
+            "http://d-nb.info/gnd/4003614-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Oprecht",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Zürich {[u.a.]",
+          "sameAs": [
+            "http://sws.geonames.org/2657896/"
+          ]
+        }
+      },
+      "datePublished": "1939"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "126",
+      "ocr_result": "Scanzoni, Gustav von: Unter Ausschluss der Öffentlichkeit. München: Musarion-Verl. 1933.",
+      "sameAs": [
+        "http://d-nb.info/575951028"
+      ],
+      "@type": "CreativeWork",
+      "name": "Unter Ausschluss der Öffentlichkeit",
+      "author": {
+        "@type": "Person",
+        "name": "Gustav von Scanzoni",
+        "givenName": "Gustav",
+        "familyName": "Scanzoni",
+        "gender": "male",
+        "birthDate": "1885-00-00",
+        "deathDate": "1977-00-00",
+        "description": "Jurist; Schriftsteller",
+        "sameAs": [
+          "http://d-nb.info/gnd/102103690",
+          "http://viaf.org/viaf/2850900"
+        ],
+        "alternateName": [
+          "Gustav von Scanzoni-Lichtenfels",
+          "Gustav F. Scanzoni von Lichtenfels",
+          "Gustav F. von Lichtenfels"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Musarion Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "München",
+          "sameAs": [
+            "http://sws.geonames.org/2867714/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "128",
+      "ocr_result": "Schinkel, Helmut: Proletarisches Spielbuch. Berlin: Verl. d. Jugendinternationale 1931.",
+      "sameAs": [
+        "http://d-nb.info/576019682"
+      ],
+      "@type": "CreativeWork",
+      "name": "Proletarisches Spielbuch",
+      "author": {
+        "@type": "Person",
+        "name": "Helmut Schinkel",
+        "givenName": "Helmut",
+        "familyName": "Schinkel",
+        "gender": "male",
+        "birthDate": "1902-00-00",
+        "deathDate": "1946-00-00",
+        "description": "Dt. Pädagoge",
+        "sameAs": [
+          "http://d-nb.info/gnd/119442221",
+          "http://viaf.org/viaf/10656081",
+          "http://id.loc.gov/authorities/names/n97057174"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verl. d. Jugendinternationale",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1931"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "129",
+      "ocr_result": "Schmidt, Konrad: Soziale Frage und Bodenverstaatlichung. Berlin: Volkstribüne 1890.",
+      "sameAs": [
+        "http://d-nb.info/973906979"
+      ],
+      "@type": "CreativeWork",
+      "name": "Soziale Frage und Bodenverstaatlichung",
+      "author": {
+        "@type": "Person",
+        "name": "Conrad Schmidt",
+        "givenName": "Conrad",
+        "familyName": "Schmidt",
+        "gender": "male",
+        "birthDate": "1863-11-25",
+        "deathDate": "1932-10-14",
+        "sameAs": [
+          "http://d-nb.info/gnd/117535214",
+          "http://viaf.org/viaf/51783410"
+        ],
+        "alternateName": [
+          "Konrad Schmidt"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Königsberg",
+          "sameAs": [
+            "http://d-nb.info/gnd/4031541-1"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://d-nb.info/gnd/4005728-8"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verl. der Berliner Volkstribüne",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1890"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "169",
+      "ocr_result": "Zwick, Michael: Das Phantom im Nebel. Berlin: Eden-Verl. 1933.",
+      "sameAs": [
+        "http://d-nb.info/578533669"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das Phantom im Nebel",
+      "author": {
+        "@type": "Person",
+        "givenName": "Michael",
+        "familyName": "Zwick",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/101223595"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Eden-Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "135",
+      "ocr_result": "Seldt, Alexander von: Dokumente zu Friedmanns Kampf gegen die Tuberkulose. Hamburg: Selbstverl. 1935.",
+      "sameAs": [
+        "http://d-nb.info/576153451"
+      ],
+      "@type": "CreativeWork",
+      "name": "Dokumente zu Friedmanns Kampf gegen die Tuberkulose",
+      "author": {
+        "@type": "Person",
+        "givenName": "Alexander",
+        "familyName": "Seld",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/126812349"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Selbstverl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Hamburg-Fu., Vor dem Berge 40",
+          "sameAs": [
+            "http://sws.geonames.org/2911298/"
+          ]
+        }
+      },
+      "datePublished": "1935"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "82",
+      "ocr_result": "Lebensjahrfuehrer, Ihr ~. Trier: Lerwin-Verl. 1938.",
+      "sameAs": [
+        "http://www.worldcat.org/oclc/84792899"
+      ],
+      "@type": "CreativeWork",
+      "name": "Ihr Lebens-Jahresführer!",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lerwin-Verlag",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Trier",
+          "sameAs": [
+            "http://sws.geonames.org/2821164/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "145",
+      "ocr_result": "Streik, Der ~ der Berliner Verkehrsarbeiter. Düsseldorf: Westdt. Buchdruckwerkstätten 1932.",
+      "sameAs": [
+        "http://d-nb.info/57657421X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Streik, Der ~ der Berliner Verkehrsarbeiter",
+      "editor": {
+        "@type": "Person",
+        "name": "Ernst Schneller",
+        "givenName": "Ernst",
+        "familyName": "Schneller",
+        "gender": "male",
+        "birthDate": "1890-11-08",
+        "deathDate": "1944-10-11",
+        "description": "war Reichstagsabgeordneter der Kommunistischen Partei; ermordet im KZ Sachsenhausen; Dt. Pädagoge, Arbeiterführer und Politiker",
+        "sameAs": [
+          "http://d-nb.info/gnd/11875873X",
+          "http://viaf.org/viaf/22937131"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Leipzig",
+          "sameAs": [
+            "http://d-nb.info/gnd/4035206-7"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Sachsenhausen (Oranienburg)",
+          "sameAs": [
+            "http://d-nb.info/gnd/4051185-6"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Westdt. Buchdruckwerkstätten",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Düsseldorf",
+          "sameAs": [
+            "http://sws.geonames.org/2934246/"
+          ]
+        }
+      },
+      "datePublished": "1932"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "152",
+      "ocr_result": "Veiter, Theodor: Die slowenische Volksgruppe in Kärnten. Wien: Reinhold-Verl. 1936.",
+      "sameAs": [
+        "http://d-nb.info/362938431"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die slowenische Volksgruppe in Kärnten",
+      "author": {
+        "@type": "Person",
+        "name": "Theodor Veiter",
+        "givenName": "Theodor",
+        "familyName": "Veiter",
+        "gender": "male",
+        "birthDate": "1907-09-22",
+        "deathDate": "1994-10-23",
+        "description": "Österr. Jurist (Völkerrechtler); Journalist; Hochschullehrer. Vor 1938 journalistisch tätig, 1938-45 Schreibverbot. Rechtsanwalt, Honorarprofessor an den Universitäten Königstein (Deutschland) und Innsbruck. Spezialisiert auf Volksgruppenrecht",
+        "sameAs": [
+          "http://d-nb.info/gnd/11916728X",
+          "http://viaf.org/viaf/39759099",
+          "http://id.loc.gov/authorities/names/n80028167"
+        ],
+        "alternateName": [
+          "Theodorich D'Agunto",
+          "Theodorich d' Agunto"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "München",
+          "sameAs": [
+            "http://d-nb.info/gnd/4127793-4"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Feldkirch (Vorarlberg)"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Reinhold",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1936"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "65",
+      "ocr_result": "Johannsen, Ernst: Fronterinnerungen eines Pferdes. Hamburg: Fackelreiter-Verl. 1929.",
+      "sameAs": [
+        "http://d-nb.info/574141804"
+      ],
+      "@type": "CreativeWork",
+      "name": "Fronterinnerungen eines Pferdes",
+      "author": {
+        "@type": "Person",
+        "name": "Ernst Johannsen",
+        "givenName": "Ernst",
+        "familyName": "Johannsen",
+        "gender": "male",
+        "birthDate": "1898-00-00",
+        "deathDate": "1977-00-00",
+        "description": "lebte 1939-1957 in England",
+        "sameAs": [
+          "http://d-nb.info/gnd/101877935",
+          "http://viaf.org/viaf/97934604",
+          "http://id.loc.gov/authorities/names/n2005024553"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Hamburg",
+          "sameAs": [
+            "http://d-nb.info/gnd/4023118-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fackelreiter-Verlag",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Hamburg-Bergedorf",
+          "sameAs": [
+            "http://sws.geonames.org/2911298/"
+          ]
+        }
+      },
+      "datePublished": "1929"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "0",
+      "ocr_result": "Spruch, Der ~ von London. Der Reichstagsbrand im Spiegel des Urteils ... Prag: L. Twrdik 1933.",
+      "sameAs": [
+        "http://d-nb.info/992875595"
+      ],
+      "@type": "CreativeWork",
+      "name": "Spruch, Der ~ von London. Der Reichstagsbrand im Spiegel des Urteils ...",
+      "editor": {
+        "@type": "Person",
+        "name": "Ludmila Twrdik",
+        "givenName": "Ludmila",
+        "familyName": "Twrdik",
+        "gender": "female",
+        "sameAs": [
+          "http://d-nb.info/gnd/126997195",
+          "http://viaf.org/viaf/20691350"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "M. Schulz",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Prag",
+          "sameAs": [
+            "http://sws.geonames.org/3067696/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "5",
+      "ocr_result": "Asch, Schalom: Sämtliche Schriften.",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Kleine Geschichten aus der Bibel"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "My personal faith"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Im Lande der Vaeter"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Erde"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Sabbatai Zwei"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kleine Geschichten aus der Bibel"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kitbē Šalom Aš"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Gesang des Tales"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Mutter"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Warschau"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Trost des Volkes"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Von den Vätern"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Gott der Rache"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Zauberin von Kastilien"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Moskau"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Kinder in der Fremde"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Chaim Lederers Rückkehr"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Ein Glaubensmartyrium"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der elektrische Stuhl"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Gefangene Gottes"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Kinder Abrahams"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Djadja Mozes"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Zauberin von Kastilien"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Krieg geht weiter"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Mutter"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Onkel Moses"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Ein Glaubensmartyrium"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der elektrische Stuhl"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mot'ka-Vor"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Sintflut"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Petersburg"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mottke der Dieb"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mottke, der Dieb"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Nazarener"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mottke der Dieb"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Woran ich glaube"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Onkel Moses"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Mottke der Dieb"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Joseph"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Bund der Schwachen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Lo zio Mosè"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The Nazarene"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Children of Abraham"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Song of the valley"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Three cities"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The apostle"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "My personal faith"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Feinde - Harte Strafe - Der Orden - Der Bankrott"
+        }
+      ],
+      "@type": "Collection",
+      "name": "Asch, Schalom: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "40",
+      "ocr_result": "Fraenkel, Ernst: Betriebsräte u. Arbeitsgerichtsgesetz. Berlin: Laub 1927.",
+      "sameAs": [
+        "http://d-nb.info/573952590"
+      ],
+      "@type": "CreativeWork",
+      "name": "Betriebsräte u. Arbeitsgerichtsgesetz",
+      "author": {
+        "@type": "Person",
+        "name": "Ernst Fraenkel",
+        "givenName": "Ernst",
+        "familyName": "Fraenkel",
+        "gender": "male",
+        "birthDate": "1898-12-26",
+        "deathDate": "1975-03-28",
+        "description": "1938-1951 Emigration in Großbritannien u.d. USA; Schwerpunkt Völkerrecht und Demokratietheorie",
+        "sameAs": [
+          "http://d-nb.info/gnd/118534602",
+          "http://viaf.org/viaf/27108403",
+          "http://id.loc.gov/authorities/names/n81037368"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Köln",
+          "sameAs": [
+            "http://d-nb.info/gnd/2015732-0"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://d-nb.info/gnd/4005728-8"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "E. Laubsche Verlh.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1927"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "11",
+      "ocr_result": "Bierbaum, Otto Julius: Prinz Kuckuck. München: Georg Müller 1922.",
+      "sameAs": [
+        "http://d-nb.info/573286809"
+      ],
+      "@type": "CreativeWork",
+      "name": "Prinz Kuckuck",
+      "editor": {
+        "@type": "Person",
+        "name": "Peter Scher",
+        "givenName": "Peter",
+        "familyName": "Scher",
+        "gender": "male",
+        "birthDate": "1880-09-30",
+        "deathDate": "1953-09-23",
+        "sameAs": [
+          "http://d-nb.info/gnd/117231126",
+          "http://viaf.org/viaf/294344172",
+          "http://id.loc.gov/authorities/names/no2009066432"
+        ],
+        "alternateName": [
+          "Pierre Blaguere",
+          "Trim",
+          "Emanuel Trim",
+          "Leon Holly",
+          "Fritz Schweynert",
+          "Fritz Hermann Schweynert"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Großkamsdorf"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Wasserburg, Inn",
+          "sameAs": [
+            "http://d-nb.info/gnd/4064711-0"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Georg Müller",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "München",
+          "sameAs": [
+            "http://sws.geonames.org/2867714/"
+          ]
+        }
+      },
+      "datePublished": "1922"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "38",
+      "ocr_result": "Fischer, Paul: Volkstümliche Einführung in das Marx-Studium. Stuttgart: Dietz 1922.",
+      "sameAs": [
+        "http://d-nb.info/57472107X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Volkstümliche Einführung in das Marx-Studium",
+      "editor": {
+        "@type": "Person",
+        "name": "Paul Kampffmeyer",
+        "givenName": "Paul",
+        "familyName": "Kampffmeyer",
+        "gender": "male",
+        "birthDate": "1864-11-29",
+        "deathDate": "1945-02-01",
+        "description": "Schriftsteller; sozialdemokr. Politiker",
+        "sameAs": [
+          "http://d-nb.info/gnd/116038365",
+          "http://viaf.org/viaf/90770568",
+          "http://id.loc.gov/authorities/names/nb98094446"
+        ],
+        "alternateName": [
+          "P. Kampffmeyer"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://d-nb.info/gnd/4005728-8"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Berlin-Wilhelmshagen",
+          "sameAs": [
+            "http://d-nb.info/gnd/4659636-7"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "J. H. W. Dietz Nachf.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Stuttgart",
+          "sameAs": [
+            "http://sws.geonames.org/2825297/"
+          ]
+        }
+      },
+      "datePublished": "1922"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "29",
+      "ocr_result": "Ehinger, Otto: Die sozialen Ausbeutungssysteme. München: Reinhardt 1912.",
+      "sameAs": [
+        "http://d-nb.info/572719728"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die sozialen Ausbeutungssysteme",
+      "author": {
+        "@type": "Person",
+        "name": "Otto Ehinger",
+        "givenName": "Otto",
+        "familyName": "Ehinger",
+        "gender": "male",
+        "birthDate": "1882-00-00",
+        "deathDate": "1979-00-00",
+        "description": "Bürgermeister von Meersburg",
+        "sameAs": [
+          "http://d-nb.info/gnd/119243091",
+          "http://viaf.org/viaf/77121358",
+          "http://id.loc.gov/authorities/names/no2013054719"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Reinhardt",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "München",
+          "sameAs": [
+            "http://sws.geonames.org/2867714/"
+          ]
+        }
+      },
+      "datePublished": "1912"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "13",
+      "ocr_result": "Nikonowa [Nikonova], 0. N.: Lehrbuch der deutschen Sprache. — Le¬ningrad: Staatsverl. für Lehrbücher 1940.",
+      "sameAs": [
+        "http://d-nb.info/57525260X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Lehrbuch der deutschen Sprache",
+      "author": {
+        "@type": "Person",
+        "name": "Ol'ga N. Nikonova",
+        "givenName": "Ol'ga N.",
+        "familyName": "Nikonova",
+        "gender": "female",
+        "description": "Russ. Sprachwiss.",
+        "sameAs": [
+          "http://d-nb.info/gnd/110182774"
+        ],
+        "alternateName": [
+          "O. N. Nikonova",
+          "Ol'ga Nikolaevna Nikonova",
+          "O. N. Nikonowa",
+          "Ol'ga N. Nikonowa",
+          "Ol'ga Nikolaevna Nikonowa"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Staatsverl. für Lehrbücher u. Pädagogik",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Leningrad",
+          "sameAs": [
+            "http://sws.geonames.org/498817/"
+          ]
+        }
+      },
+      "datePublished": "1940"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "0",
+      "ocr_result": "Kammerer, Paul: Einzeltod — Völkertod ... Wien: Anzengruber 1918.",
+      "sameAs": [
+        "http://d-nb.info/36102603X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Einzeltod — Völkertod",
+      "author": {
+        "@type": "Person",
+        "name": "Paul Kammerer",
+        "givenName": "Paul",
+        "familyName": "Kammerer",
+        "gender": "male",
+        "birthDate": "1880-08-17",
+        "deathDate": "1926-09-23",
+        "description": "Habil. für Experimentelle Morphologie der Tiere an der Universität Wien; studierte auch am Wiener Konservatorium",
+        "sameAs": [
+          "http://d-nb.info/gnd/116036028",
+          "http://viaf.org/viaf/8128969",
+          "http://id.loc.gov/authorities/names/n84041177"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://d-nb.info/gnd/4066009-6"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Puchberg am Schneeberg"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Anzengruber-Verl.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1918"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "78",
+      "ocr_result": "Krylenko, Nikolai W.: Die Kriminalpolitik der Sowjetmacht. Berlin: Verl. f. Lit. u. Politik 1927.",
+      "sameAs": [
+        "http://d-nb.info/574505776"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Kriminalpolitik der Sowjetmacht",
+      "author": {
+        "@type": "Person",
+        "name": "Nikolaj V. Krylenko",
+        "givenName": "Nikolaj V.",
+        "familyName": "Krylenko",
+        "gender": "male",
+        "birthDate": "1885-05-14",
+        "deathDate": "1938-07-29",
+        "description": "1931-1936 Volkskommissar für Justiz der RSFSR; Sowjet. Jurist und Politiker",
+        "sameAs": [
+          "http://d-nb.info/gnd/121672026",
+          "http://viaf.org/viaf/56668317",
+          "http://id.loc.gov/authorities/names/n84128150"
+        ],
+        "alternateName": [
+          "A. Bram",
+          "N. V. Krylenko",
+          "N. W. Krylenko",
+          "Nikolaj Vasilʹevič Krylenko",
+          "Nikolaj W. Krylenko",
+          "N. Krylenko"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Sytschowski rajon"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Moskau",
+          "sameAs": [
+            "http://d-nb.info/gnd/4074987-3"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlag f. Literatur u. Politik",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1927"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "147",
+      "ocr_result": "Teusch, Josef: Wie lange noch konfessionelle Spaltung in Deutschland? Köln: Bachem 1934.",
+      "sameAs": [
+        "http://d-nb.info/368404625"
+      ],
+      "@type": "CreativeWork",
+      "name": "Wie lange noch konfessionelle Spaltung in Deutschland?",
+      "author": {
+        "name": "Josef Teusch",
+        "givenName": "Josef",
+        "familyName": "Teusch"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bachem",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Köln",
+          "sameAs": [
+            "http://sws.geonames.org/2886242/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "86",
+      "ocr_result": "Lipinski, Richard: Sämtliche Schriften.",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Die Rechte und Pflichten des Mieters nach dem neuen Bürgerl. Gesetzbuch"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Das Recht und der Rechtsweg der Handlungsgehilfen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Ordnungskandidat"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Dokumente zum Sozialistengesetz"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Reichsversicherungsordnung und Reichsversicherung für Angestellte"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Deutschlands Sozialpolitik"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Heraus aus der Kirche"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Heraus aus der Kirche"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Das Recht im gewerblichen Arbeitsverhältnis"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Der Kampf um die politische Macht in Sachsen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Das Recht im gewerblichen Arbeits-Verhältnis"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Geschichte der sozialistischen Arbeiterbewegung in Leipzig"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Sozialdemokratie von ihren Anfängen bis zur Gegenwart"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Die Erdrosselung der Preßfreiheit vor der sächsischen Volkskammer"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Demokratie, Sozialismus und Weltrevolution"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Belagerungszustand und Standrecht in Sachsen"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Demokratie, Sozialismus und Weltrevolution"
+        }
+      ],
+      "@type": "Collection",
+      "name": "Lipinski, Richard: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "121",
+      "ocr_result": "Rohleder, Hermann: Vorlesungen über das gesamte Geschlechtsleben des Menschen. Berlin: Fischers mediz. Buchh. 1923.",
+      "sameAs": [
+        "http://d-nb.info/560834861"
+      ],
+      "@type": "CreativeWork",
+      "name": "Vorlesungen über das gesamte Geschlechtsleben des Menschen",
+      "author": {
+        "@type": "Person",
+        "name": "Hermann Rohleder",
+        "givenName": "Hermann",
+        "familyName": "Rohleder",
+        "gender": "male",
+        "birthDate": "1866-00-00",
+        "deathDate": "1934-00-00",
+        "sameAs": [
+          "http://d-nb.info/gnd/117534471",
+          "http://viaf.org/viaf/117664808"
+        ],
+        "alternateName": [
+          "H. Rohleder",
+          "Hermann Oscar Rohleder"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fischers Medicin. Buchh.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "NULL"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "97",
+      "ocr_result": "Moellwitz, Gino Forst von: Squab. Weiberfang in der Südsee. Berlin: Verl. mod. Lektüre 1933.",
+      "sameAs": [
+        "http://d-nb.info/580751376"
+      ],
+      "@type": "CreativeWork",
+      "name": "Squab. Weiberfang in der Südsee",
+      "author": {
+        "@type": "Person",
+        "givenName": "Gino Forst",
+        "familyName": "Moellwitz",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/126649340"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verl. moderner Lektüre",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "75",
+      "ocr_result": "Kongsback, Kaete: Von Dir — und den andern mehr. Zirkus der Geschlechter. Hamburg: Göpner 1928.",
+      "sameAs": [
+        "http://www.worldcat.org/oclc/246321409"
+      ],
+      "@type": "CreativeWork",
+      "name": "Von Dir — und den andern mehr. Zirkus der Geschlechter",
+      "author": {
+        "name": "Käte Kongsback",
+        "givenName": "Käte",
+        "familyName": "Kongsback"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Göpner",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Hamburg",
+          "sameAs": [
+            "http://sws.geonames.org/2911298/"
+          ]
+        }
+      },
+      "datePublished": "1928"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "8",
+      "ocr_result": "S. M. Kirow. Eine kurze Biographie. — Strasbourg: Éditions Prométhée\n1937.",
+      "sameAs": [
+        "http://d-nb.info/99335730X"
+      ],
+      "@type": "CreativeWork",
+      "name": "S. M. Kirow. Eine kurze Biographie",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Editions Prométhée",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Strasbourg [Straßburg]",
+          "sameAs": [
+            "http://sws.geonames.org/2973783/"
+          ]
+        }
+      },
+      "datePublished": "1937"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "43",
+      "ocr_result": "Gebhardt, Florentine: Bei uns ist Erntefest. Berlin: Neuer Berliner Buchvertrieb 1934.",
+      "sameAs": [
+        "http://d-nb.info/573225087"
+      ],
+      "@type": "CreativeWork",
+      "name": "Bei uns ist Erntefest",
+      "author": {
+        "@type": "Person",
+        "name": "Florentine Gebhardt",
+        "givenName": "Florentine",
+        "familyName": "Gebhardt",
+        "gender": "female",
+        "birthDate": "1865-04-18",
+        "deathDate": "1941-00-00",
+        "sameAs": [
+          "http://d-nb.info/gnd/116474343",
+          "http://viaf.org/viaf/35209329"
+        ],
+        "alternateName": [
+          "Fl. Gebhardt",
+          "F. Gebhardt",
+          "Florus Bardt",
+          "F. Bardt",
+          "G. Edhardt",
+          "Stefanie Eusebius",
+          "Tino Hardt",
+          "Luise Klotz",
+          "L. Klotz",
+          "F. Lora",
+          "A. Rolf"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Neuer Berliner Buchvertrieb",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "7",
+      "ocr_result": "Jugend am Staatsruder. Die jungen Deputierten im Obersten Rat der UdSSR. — Paris: Éditions Prométhée (1938).",
+      "sameAs": [
+        "http://d-nb.info/574169903"
+      ],
+      "@type": "CreativeWork",
+      "name": "Jugend am Staatsruder. Die jungen Deputierten im Obersten Rat der UdSSR",
+      "author": {
+        "name": "NULL NULL",
+        "givenName": "NULL",
+        "familyName": "NULL"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Éditions Prométhée",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Paris",
+          "sameAs": [
+            "http://sws.geonames.org/2988507/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "8",
+      "ocr_result": "Beamt, Walter: Das erste Weib. Potsdam: Kiepenheuer 1924.",
+      "sameAs": [
+        "http://d-nb.info/572756453"
+      ],
+      "@type": "CreativeWork",
+      "name": "Das erste Weib",
+      "author": {
+        "@type": "Person",
+        "name": "Walther Beamt",
+        "givenName": "Walther",
+        "familyName": "Beamt",
+        "gender": "male",
+        "birthDate": "1890-00-00",
+        "sameAs": [
+          "http://d-nb.info/gnd/116097752",
+          "http://viaf.org/viaf/67208291"
+        ],
+        "alternateName": [
+          "Walter Béamt"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Brünn",
+          "sameAs": [
+            "http://d-nb.info/gnd/4008456-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "G. Kiepenheuer",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Potsdam",
+          "sameAs": [
+            "http://sws.geonames.org/2852458/"
+          ]
+        }
+      },
+      "datePublished": "1924"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "93",
+      "ocr_result": "Maurice, Martin: Nacht und Tag. Wien: Zsolnay 1930.",
+      "sameAs": [
+        "http://d-nb.info/576299081"
+      ],
+      "@type": "CreativeWork",
+      "name": "Nacht und Tag",
+      "editor": {
+        "@type": "Person",
+        "name": "Paul Amann",
+        "givenName": "Paul",
+        "familyName": "Amann",
+        "gender": "male",
+        "birthDate": "1884-03-06",
+        "deathDate": "1958-02-14",
+        "description": "Österreichischer Philologe, Übersetzer und Sachbuchautor; publizierte Biographien, über den deutschen und französischen Nationalcharakter, über jüdische Befindlichkeit und über Assimilationsfragen; diente im 1. Weltkrieg als Offizier in der k.u.k. Armee, emigrierte 1939 nach Frankreich, 1941 in die USA, dort Professor an mehreren Colleges",
+        "sameAs": [
+          "http://d-nb.info/gnd/116296763",
+          "http://viaf.org/viaf/73978246",
+          "http://id.loc.gov/authorities/names/n83016614"
+        ],
+        "alternateName": [
+          "Polybe Newman",
+          "Polyb Newman"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Prag",
+          "sameAs": [
+            "http://d-nb.info/gnd/4076310-9"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Fairfield, Conn.",
+          "sameAs": [
+            "http://d-nb.info/gnd/4373811-4"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "P. Zsolnay",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "10",
+      "ocr_result": "Beria, L.: Zur Geschichte der bolschewistischen Organisationen in Transkaukasien. Moskau: Verlagsgen. ausländ. Arbeiter 1936.",
+      "sameAs": [
+        "http://d-nb.info/572256299"
+      ],
+      "@type": "CreativeWork",
+      "name": "Zur Geschichte der bolschewistischen Organisationen in Transkaukasien",
+      "author": {
+        "@type": "Person",
+        "name": "Lavrentij Pavlovič Berija",
+        "givenName": "Lavrentij Pavlovič",
+        "familyName": "Berija",
+        "gender": "male",
+        "birthDate": "1899-03-29",
+        "deathDate": "1953-12-23",
+        "description": "Sowjet. Politiker; Chef der Geheimpolizei; von 1938 bis 1945 Volkskommissar; 1953 Minister für Innere Angelegenheiten",
+        "sameAs": [
+          "http://d-nb.info/gnd/118509586",
+          "http://viaf.org/viaf/20471281",
+          "http://id.loc.gov/authorities/names/n50007693"
+        ],
+        "alternateName": [
+          "L. Beria",
+          "L. P. Beria",
+          "Lavrenti Beria",
+          "L. P. Beriia",
+          "Lavrentii Pavlovich Beriia",
+          "L. P. Berija",
+          "Lavrentij Berija",
+          "Lavrentiy Beria",
+          "Lavrenty Pavlovich Beria",
+          "Lavrenty Pavlovich Beriya",
+          "Lavrenti Pavlovich Beria",
+          "Lawrientij Pawlowicz Beria",
+          "Lawrentij Beria",
+          "Lawrenti P. Berija"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Mercheuli"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Moskau",
+          "sameAs": [
+            "http://d-nb.info/gnd/4074987-3"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlagsgen. ausländ. Arbeiter in d. UdSSR",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Moskau",
+          "sameAs": [
+            "http://sws.geonames.org/524901/"
+          ]
+        }
+      },
+      "datePublished": "1936"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "7",
+      "ocr_result": "Hofmann, Max Moritz, geb. 1. 3. 1891: sämtliche Schriften.",
+      "@type": "Collection",
+      "name": "Hofmann, Max Moritz: Sämtliche Schriften"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "7",
+      "ocr_result": "Falck, Richard, u. Olga Falck: Die Ptychogasterfäule des Coniferenholzes [u. a.]. — (Warszawa: [Księg. roln.]) 1937 = Hausschwamm-Forschungen. 12 = Instytut badawczy lasów panstwowych. Rozprawy i sprawozdania. A, 36/38.",
+      "sameAs": [
+        "http://d-nb.info/57978326X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Ptychogasterfäule des Coniferenholzes [u. a.]",
+      "author": {
+        "@type": "Person",
+        "name": "Ryszard Falck",
+        "givenName": "Ryszard",
+        "familyName": "Falck",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/127456759",
+          "http://viaf.org/viaf/305120703"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ksie̜g. roln.",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Warszawa",
+          "sameAs": [
+            "http://sws.geonames.org/756135/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "84",
+      "ocr_result": "Leonhard, Rudolf: Spanische Gedichte und Tagebuchblätter. Paris: Ed. Prométhée 1938.",
+      "sameAs": [
+        "http://d-nb.info/993282369"
+      ],
+      "@type": "CreativeWork",
+      "name": "Spanische Gedichte und Tagebuchblätter",
+      "author": {
+        "@type": "Person",
+        "name": "Rudolf Leonhard",
+        "givenName": "Rudolf",
+        "familyName": "Leonhard",
+        "gender": "male",
+        "birthDate": "1889-10-27",
+        "deathDate": "1953-12-19",
+        "description": "Deutscher Kulturkreis; Dt. Schriftsteller, Lyriker, Essayist u. Bühnendichter; Im Internierungslager in Frankreich",
+        "sameAs": [
+          "http://d-nb.info/gnd/118727559",
+          "http://viaf.org/viaf/32012304",
+          "http://id.loc.gov/authorities/names/n85058903"
+        ],
+        "alternateName": [
+          "Rudolph Leonhard",
+          "Rudolf Lanzer"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Lissa",
+          "sameAs": [
+            "http://d-nb.info/gnd/123156-X"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Berlin (Ost)",
+          "sameAs": [
+            "http://sws.geonames.org/2950157/"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Editions Prométhée",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Paris",
+          "sameAs": [
+            "http://sws.geonames.org/2988507/"
+          ]
+        }
+      },
+      "datePublished": "1938"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "101",
+      "ocr_result": "Nationalismus, Sozialrevolutionärer ~. Flarchheim i. Thür.: Die Kommenden 1930.",
+      "sameAs": [
+        "http://d-nb.info/576324485"
+      ],
+      "@type": "CreativeWork",
+      "name": "Nationalismus, Sozialrevolutionärer ~. Flarchheim i",
+      "editor": {
+        "@type": "Person",
+        "name": "Karl O. Paetel",
+        "givenName": "Karl O.",
+        "familyName": "Paetel",
+        "gender": "male",
+        "birthDate": "1906-00-00",
+        "deathDate": "1975-00-00",
+        "description": "Dt. Journalist u. Schriftsteller, Nationalbolschewist",
+        "sameAs": [
+          "http://d-nb.info/gnd/118591150",
+          "http://viaf.org/viaf/46914130",
+          "http://id.loc.gov/authorities/names/n87135709"
+        ],
+        "alternateName": [
+          "Karl Otto Paetel",
+          "KOP",
+          "Otto Meier"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://d-nb.info/gnd/4005728-8"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "New York City",
+          "sameAs": [
+            "http://d-nb.info/gnd/4042011-5"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Die Kommenden [Urquell-Verlag]",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Flarchheim i. Thür.",
+          "sameAs": [
+            "http://sws.geonames.org/2926371/"
+          ]
+        }
+      },
+      "datePublished": "1930"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "8",
+      "ocr_result": "Basch, Ernst: Unpolitische Beobachtungen. Zürich: Oprecht & Helbling 1934.",
+      "sameAs": [
+        "http://d-nb.info/572144784"
+      ],
+      "@type": "CreativeWork",
+      "name": "Unpolitische Beobachtungen",
+      "author": {
+        "@type": "Person",
+        "name": "E. B. Ashton",
+        "givenName": "E. B.",
+        "familyName": "Ashton",
+        "birthDate": "1909-00-00",
+        "description": "Emigrierte 1933 aus München",
+        "sameAs": [
+          "http://d-nb.info/gnd/127235787",
+          "http://viaf.org/viaf/18240364",
+          "http://id.loc.gov/authorities/names/nr97030325"
+        ],
+        "alternateName": [
+          "Ernst Basch"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Oprecht & Helbling",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Zürich",
+          "sameAs": [
+            "http://sws.geonames.org/2657896/"
+          ]
+        }
+      },
+      "datePublished": "1934"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "14",
+      "ocr_result": "Reeb, Johannes: Christentum — Ende oder Wende? — Einsiedeln, Köln: Benziger (1940).",
+      "sameAs": [
+        "http://d-nb.info/57574474X"
+      ],
+      "@type": "CreativeWork",
+      "name": "Christentum — Ende oder Wende?",
+      "author": {
+        "@type": "Person",
+        "givenName": "Johannes",
+        "familyName": "Reeb",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/107043580"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Benziger",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Einsiedeln",
+          "sameAs": [
+            "http://sws.geonames.org/2660925/"
+          ]
+        }
+      },
+      "datePublished": "1940"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "122",
+      "ocr_result": "Rosenberg, J.: Ricardo und Marx als Werttheoretiker. Wien: Wiener Volksbuchh. 1904.",
+      "sameAs": [
+        "http://www.worldcat.org/oclc/797286879"
+      ],
+      "@type": "CreativeWork",
+      "name": "Ricardo und Marx als Werttheoretiker",
+      "author": {
+        "name": "J. Rosenberg",
+        "givenName": "J.",
+        "familyName": "Rosenberg"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Wiener Volksbuchh.",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1904"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "72",
+      "ocr_result": "Kirchsteiger, Hans: Der morsche Beichtstuhl. Wien: Anzengruber-Verl. 1928.",
+      "sameAs": [
+        "http://d-nb.info/574321004"
+      ],
+      "@type": "CreativeWork",
+      "name": "Der morsche Beichtstuhl",
+      "author": {
+        "@type": "Person",
+        "givenName": "Hans",
+        "familyName": "Kirchsteiger",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/101212429"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Anzengruber-Verlag",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Wien",
+          "sameAs": [
+            "http://sws.geonames.org/2761369/"
+          ]
+        }
+      },
+      "datePublished": "1928"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "113",
+      "ocr_result": "Protokolle der Weisen von Zion, die grösste Fälschung des Jahrhunderts. Glarus: Glarner Nachrichten 1933.",
+      "sameAs": [
+        "http://d-nb.info/575688017"
+      ],
+      "@type": "CreativeWork",
+      "name": "Protokolle der Weisen von Zion, die grösste Fälschung des Jahrhunderts",
+      "editor": {
+        "@type": "Person",
+        "name": "Johann Baptist Rusch",
+        "givenName": "Johann Baptist",
+        "familyName": "Rusch",
+        "gender": "male",
+        "birthDate": "1886-02-07",
+        "deathDate": "1954-11-24",
+        "description": "Mels (Wirkungsort); Hrsg. der \"Schweizerischen republikanischen Blätter\"; Schweiz. Journalist; geb. in Appenzell; gest. in Bad Ragaz",
+        "sameAs": [
+          "http://d-nb.info/gnd/116709847",
+          "http://viaf.org/viaf/29035980"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Appenzell",
+          "sameAs": [
+            "http://d-nb.info/gnd/4002485-4"
+          ]
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Bad Ragaz",
+          "sameAs": [
+            "http://d-nb.info/gnd/4103547-1"
+          ]
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Glarner Nachrichten",
+        "provenance": "Original List 'Verbannte Bücher'",
+        "location": {
+          "@type": "Place",
+          "name": "Glarus",
+          "sameAs": [
+            "http://sws.geonames.org/2660594/"
+          ]
+        }
+      },
+      "datePublished": "1933"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "43",
+      "ocr_result": "Gallwitz, Sophie Dorothea: Der neue Dichter u. die Frau. Berlin: Herbig 1927.",
+      "sameAs": [
+        "http://d-nb.info/574738614"
+      ],
+      "@type": "CreativeWork",
+      "name": "Der neue Dichter u. die Frau",
+      "author": {
+        "@type": "Person",
+        "name": "Sophie D. Gallwitz",
+        "givenName": "Sophie D.",
+        "familyName": "Gallwitz",
+        "gender": "female",
+        "birthDate": "1869-03-30",
+        "deathDate": "1948-12-30",
+        "description": "Bremen (Wirkungsort); Dt. Schriftstellerin, Kunstkritikerin",
+        "sameAs": [
+          "http://d-nb.info/gnd/116374756",
+          "http://viaf.org/viaf/52809351",
+          "http://id.loc.gov/authorities/names/n83214817"
+        ],
+        "alternateName": [
+          "Sophie Dorothea Gallwitz",
+          "Sophie Dorothee Gallwitz",
+          "S. D. Gallwitz"
+        ],
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Wernigerode"
+        },
+        "deathPlace": {
+          "@type": "Place",
+          "name": "Fischerhude"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "F. A. Herbig",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Berlin",
+          "sameAs": [
+            "http://sws.geonames.org/2950159/"
+          ]
+        }
+      },
+      "datePublished": "1927"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "54",
+      "ocr_result": "Hauswirth, Werner: Republik Europa. Münsingen: B. Fischer in Komm. 1937.",
+      "sameAs": [
+        "http://d-nb.info/573693455"
+      ],
+      "@type": "CreativeWork",
+      "name": "Republik Europa",
+      "author": {
+        "@type": "Person",
+        "givenName": "Werner",
+        "familyName": "Hauswirth",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/125076223"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "B. Fischer",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Münsingen",
+          "sameAs": [
+            "http://sws.geonames.org/2867560/"
+          ]
+        }
+      },
+      "datePublished": "1937"
+    },
+    {
+      "ss_flag": false,
+      "page_number_in_ocr_document": "31",
+      "ocr_result": "Ellis, Havelock: Die Homosexualität. Leipzig: Kabitzsch 1924.",
+      "sameAs": [
+        "http://d-nb.info/365699187"
+      ],
+      "@type": "CreativeWork",
+      "name": "Die Homosexualität",
+      "editor": {
+        "@type": "Person",
+        "givenName": "Helmut",
+        "familyName": "Müller",
+        "gender": "male",
+        "sameAs": [
+          "http://d-nb.info/gnd/110748387"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kabitzsch",
+        "provenance": "DNB Linked Data",
+        "location": {
+          "@type": "Place",
+          "name": "Leipzig",
+          "sameAs": [
+            "http://sws.geonames.org/2879139/"
+          ]
+        }
+      },
+      "datePublished": "1924"
+    },
+    {
+      "ss_flag": true,
+      "page_number_in_ocr_document": "14",
+      "ocr_result": "Putzner, Heinrich: sämtliche Schriften.",
+      "@type": "Collection",
+      "name": "Putzner, Heinrich: Sämtliche Schriften"
+    }
+  ]
+}
