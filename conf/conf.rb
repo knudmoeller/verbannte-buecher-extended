@@ -10,7 +10,7 @@ class Conf
       } ,
       :output_json => "verbannte_buecher_neu.json" ,
       :namespaces => {
-        :base => "https://daten.berlin.de/sites/default/" ,
+        :base => "https://daten.berlin.de/sites/default/files/" ,
       } ,
       :provenances => {
         :dnb => "DNB linked data" ,
@@ -51,7 +51,7 @@ class Conf
     }
 
     conf[:vocabs][:vb].keys.each do |term|
-      conf[:vocabs][:vb][term]["@id"] = "#{conf[:namespaces][:base]}ref/verbannt\##{term}"
+      conf[:vocabs][:vb][term]["@id"] = "#{conf[:namespaces][:base]}ref/verbannt.ttl\##{term}"
     end
 
     conf[:namespaces][:entry] = "#{conf[:namespaces][:base]}data/verbannte_buecher/entry/"
