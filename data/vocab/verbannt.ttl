@@ -5,7 +5,7 @@
 @prefix dc:   <http://purl.org/dc/elements/1.1/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix verbannt: <https://daten.berlin.de/sites/default/ref/verbannt#> .
+@prefix verbannt: <https://daten.berlin.de/sites/default/files/ref/verbannt#> .
 
 # -------------------------------------------------------------------------
 

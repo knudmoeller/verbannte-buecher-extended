@@ -4,10 +4,14 @@
 
 - Fix errors
 
+## 0.1.2
+
+- Fixed vocabulary path.
+
 ## 0.1.1
 
-- Fixed data base bath.
-- Fixed vocabulary bath.
+- Fixed data base path.
+- Fixed vocabulary path.
 
 ## 0.1.0
 
