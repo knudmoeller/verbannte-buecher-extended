@@ -18,6 +18,7 @@ class PersonHandler < Handler
       "birthPlace" => "place_of_birth" ,
       "deathPlace" => "place_of_death"
     }
+    @conf = args[:conf]
   end
 
   def serialize
@@ -34,6 +35,7 @@ class PersonHandler < Handler
     @place_property_mapping.keys.each do |property|
       add_place(property)
     end
+    @json["@id"] = "#{@conf[:namespaces][:person]}p_#{@resource['id']}"
     return @json
   end
 
@@ -50,7 +52,8 @@ class PersonHandler < Handler
     if (column_name = @place_property_mapping[property])
       place_handler = PlaceHandler.new({ 
         :resource => @resource ,
-        :place_column => column_name
+        :place_column => column_name ,
+        :conf => @conf
       })
       if (place = place_handler.serialize)
         @json[property] = place

@@ -4,6 +4,9 @@ require 'nokogiri'
 require 'csv'
 require 'uri'
 
+require_relative './publication_handler.rb'
+require_relative './collection_handler.rb'
+
 class Denormalizer
 
   attr_reader :list, :people, :publications, :publications_by_row, :mappings
@@ -69,6 +72,22 @@ class Denormalizer
       end
     end
 
+    puts "read publisher corrections ..."
+    corrections_path = File.join(@conf[:data_folder], "source", "publisher_corrections.json")
+    corrections = JSON.parse(File.read(corrections_path))
+    @conf[:publisher_corrections] = corrections
+    
+    @handler_args = {
+      :conf => @conf ,
+      :people => @people ,
+      :people_by_gnd => @people_by_gnd ,
+      :publications => @publications ,
+      :publications_by_row => @publications_by_row ,
+      :mappings => @mappings ,
+      :publications_by_author => @publications_by_author ,
+      :location_index => @location_index
+    }
+
   end
   
   def categorize_list_entry(entry)
@@ -98,27 +117,11 @@ class Denormalizer
   def serialize
 
     list_elements = []
-    Hash[@list.to_a[0..100]].each do |id, publication|
-    # @list.each do |id, publication|
-      category = categorize_list_entry(publication)
-      args = {
-        :conf => @conf ,
-        :resource => publication ,
-        :people => @people ,
-        :people_by_gnd => @people_by_gnd ,
-        :publications => @publications ,
-        :publications_by_row => @publications_by_row ,
-        :mappings => @mappings ,
-        :publications_by_author => @publications_by_author ,
-        :location_index => @location_index
-      }
-      case category
-      when :publication
-        entry_handler = PublicationHandler.new(args)
-      when :complete_works
-        entry_handler = CollectionHandler.new(args)
+    # Hash[@list.to_a[0..49]].each do |id, entry|
+    @list.each do |id, entry|
+      if (entry_json = handle_entry(entry))
+        list_elements << entry_json
       end
-      list_elements << entry_handler.serialize if entry_handler
     end
 
     terms = {}
@@ -133,7 +136,10 @@ class Denormalizer
       "name" => "List der Verbannten Bücher" ,
       "itemListOrder" => "http://schema.org/ItemListOrderAscending",
       "numberOfItems" => @list.count ,
-      "itemListElement" => list_elements
+      "itemListElement" => list_elements ,
+      "description" => "This list is an extended version of the original 'Liste der Verbannten Bücher'." ,
+      "url" => "https://github.com/knudmoeller/verbannte-buecher-extended" ,
+      "license" => "https://creativecommons.org/licenses/by/3.0/de/"
     }
 
     out_path = File.join(@conf[:data_folder], "target", @conf[:output_json])
@@ -141,6 +147,20 @@ class Denormalizer
       file.puts (JSON.pretty_generate(json))
     end
 
+  end
+
+  def handle_entry(entry)
+    json = nil
+    category = categorize_list_entry(entry)
+    @handler_args[:resource] = entry
+    case category
+    when :publication
+      entry_handler = PublicationHandler.new(@handler_args)
+    when :complete_works
+      entry_handler = CollectionHandler.new(@handler_args)
+    end
+    json = entry_handler.serialize if entry_handler
+    return json
   end
   
 end

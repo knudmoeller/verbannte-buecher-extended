@@ -40,6 +40,12 @@ class CollectionHandler < EntryHandler
       "@type" => "CreativeWork" ,
       "name" => publication['title']
     }
+    unless publication['issued'].eql?("NULL")
+      json['datePublished'] = publication['issued'] 
+    end
+    if publication['gnd'].start_with?("http")
+      json['sameAs'] = [ publication['gnd'] ]
+    end
     return json
   end
 

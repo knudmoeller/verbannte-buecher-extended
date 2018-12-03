@@ -38,9 +38,29 @@ class PublisherHandler < Handler
   end
 
   def serialize
-    if (publisher = get_enhanced_publisher)
+    if (publisher = get_corrected_publisher)
+      return publisher
+    elsif (publisher = get_enhanced_publisher)
       return publisher
     elsif (publisher = get_list_publisher)
+      return publisher
+    else
+      return nil
+    end
+  end
+
+  def get_corrected_publisher
+    row = @resource[:list_resource]["row"]
+    correction = @conf[:publisher_corrections][row]
+    unless is_null?(correction)
+      publisher = {
+        "@type" => "Organization" ,
+        "name" => correction['publisher'] ,
+        "provenance" => @conf[:provenances][:manual]
+      }
+      if (place = correction['location'])
+        publisher[:location] = get_location(place)        
+      end
       return publisher
     else
       return nil
@@ -55,13 +75,7 @@ class PublisherHandler < Handler
         "provenance" => @conf[:provenances][:dnb]
       }
       if (place = @resource[:enhanced_resource]['place_of_publication'])
-        publisher[:location] = {
-          "@type" => "Place" ,
-          "name" => place
-        }        
-        if (sameAs = @location_index[place])
-          publisher[:location][:sameAs] = [ sameAs ]
-        end
+        publisher[:location] = get_location(place)        
       end
       return publisher
     else
@@ -77,13 +91,7 @@ class PublisherHandler < Handler
         "provenance" => @conf[:provenances][:orig]
       }
       if (place = @resource[:list_resource]['first_edition_publication_place'])
-        publisher[:location] = {
-          "@type" => "Place" ,
-          "name" => place
-        }
-        if (sameAs = @location_index[place])
-          publisher[:location][:sameAs] = [ sameAs ]
-        end
+        publisher[:location] = get_location(place)
       end
       return publisher
     else
@@ -91,8 +99,21 @@ class PublisherHandler < Handler
     end
   end
 
+  def get_location(location_name)
+    place_id = Digest::SHA1.hexdigest(location_name)
+    location = {
+      "@id" => "#{@conf[:namespaces][:location]}pl_#{place_id}" ,
+      "@type" => "Place" ,
+      "name" => location_name
+    }
+    if (sameAs = @location_index[location_name])
+      location[:sameAs] = [ sameAs ]
+    end
+    return location
+  end
+
   def is_sn?(publisher)
-    return publisher.strip.eql?("[s. n.]")
+    return publisher.downcase.gsub(" ","").eql?("[s.n.]")
   end
   
   

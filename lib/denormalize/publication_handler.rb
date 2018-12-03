@@ -66,9 +66,10 @@ class PublicationHandler < EntryHandler
   end
 
   def get_list_author
-    if (firstname = @resource['author_firstname'])
+    if (firstname = @resource['author_firstname'] && !is_null?(firstname))
       if (lastname = @resource['author_lastname'])
         author = {
+          "@type" => "Person" ,
           :name => "#{firstname} #{lastname}" ,
           :givenName => firstname ,
           :familyName => lastname
@@ -91,7 +92,10 @@ class PublicationHandler < EntryHandler
   def get_person(mapping)
     person_id = mapping['person_id']
     person = @people[person_id]
-    person_handler = PersonHandler.new({ :resource => person })
+    person_handler = PersonHandler.new({ 
+      :resource => person ,
+      :conf => @conf
+    })
     return person_handler.serialize
   end
 

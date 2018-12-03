@@ -1,63 +1,14 @@
 #! /usr/bin/env ruby
 
 require_relative "../lib/denormalize.rb"
+require_relative "../conf/conf.rb"
 
 unless ARGV.count == 1
   puts "usage: ruby denormalize.rb DATA_FOLDER"
   exit
 end
 
-conf = {
-  :sources => {
-    :list => "list.xml" ,
-    :people => "person.csv" ,
-    :publication => "publication.csv" ,
-    :mapping => "publicationPerson.csv"
-  } ,
-  :output_json => "verbannte_buecher_neu.json" ,
-  :namespaces => {
-    :base => "http://daten.berlin.de/verbannte_buecher/" ,
-  } ,
-  :provenances => {
-    :dnb => "DNB Linked Data" ,
-    :orig => "Original List 'Verbannte Bücher'"
-  } ,
-  :vocabs => {
-    :vb => {
-      "ss_flag": {
-        "@type": "xsd:boolean"
-      } ,
-      "page_number_in_ocr_document": {
-        "@type": "xsd:integer"
-      },
-      "ocr_result": {
-        "@type": "xsd:string"
-      },
-      "corrections_after_1938": {
-        "@type": "xsd:string"
-      }
-    } ,
-    :owl => {
-      "sameAs": {
-        "@type": "@id",
-        "@id": "http://www.w3.org/2002/07/owl#sameAs"
-      }
-    } ,
-    :dct => {
-      "provenance": {
-        "@type": "xsd:string",
-        "@id": "http://purl.org/dc/terms/provenance"
-      }
-    }
-  }
-}
-
-conf[:vocabs][:vb].keys.each do |term|
-  conf[:vocabs][:vb][term]["@id"] = "#{conf[:namespaces][:base]}vocab/#{term}"
-end
-
-conf[:namespaces][:publication] = "#{conf[:namespaces][:base]}publication/"
-conf[:namespaces][:person] = "#{conf[:namespaces][:base]}person/"
+conf = Conf.conf
 conf[:data_folder] = ARGV[0]
 
 denormalizer = Denormalizer.new({

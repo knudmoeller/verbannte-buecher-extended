@@ -18,6 +18,7 @@ class EntryHandler < Handler
   
   def serialize
     @json = Hash[@conf[:vocabs][:vb].keys.map { |term| convert_attribute(term.to_s) }.compact ]
+    @json["@id"] = "#{@conf[:namespaces][:entry]}e_#{@json['row']}"
     add_same_as('title_gnd')
   end
 

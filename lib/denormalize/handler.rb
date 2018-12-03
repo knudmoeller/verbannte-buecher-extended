@@ -1,6 +1,8 @@
+require 'uri'
+
 class Handler
   
-  attr_reader :resource
+  attr_reader :resource, :json, :property_mapping
 
   def initialize(args)
     @resource = args[:resource]
