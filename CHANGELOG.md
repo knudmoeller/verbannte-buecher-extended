@@ -3,7 +3,9 @@
 ## Development
 
 - Add Gemfile.
-- Add documentation for running scripts.
+- Documentation:
+  - Add TOC.
+  - Add documentation for running scripts.
 - Cleanup
 
 ## 0.1.2

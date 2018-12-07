@@ -12,7 +12,20 @@ https://www.berlin.de/berlin-im-ueberblick/geschichte/berlin-im-nationalsozialis
 access to the data can be gained through the Open Data portal of Berlin at
 https://daten.berlin.de/datensaetze/liste-der-verbannten-bücher.
 
-## Sources
+## Content
+ 
+<!-- TOC depthFrom:2 -->
+
+- [Content](#content)
+- [Source Data](#source-data)
+- [Output Data](#output-data)
+- [Errors in the Data and how to Fix them](#errors-in-the-data-and-how-to-fix-them)
+- [Running the Transformation Scripts](#running-the-transformation-scripts)
+- [License](#license)
+
+<!-- /TOC -->
+
+## Source Data
 
 - **Original JSON Source**: The original JSON source is no longer available
   (it was part of an older incarnation of the project), except through
@@ -40,7 +53,7 @@ https://daten.berlin.de/datensaetze/liste-der-verbannten-bücher.
   [/data/source/publisher_corrections.json](data/source/publisher_corrections.json), 
   which are then used in the conversion process.
 
-## Output JSON-LD
+## Output Data
 
 The output of the conversion process is a [JSON-LD file](data/target/verbannte_buecher_neu.json) that follows the original JSON in its structure. The vocabulary used is mainly schema.org. 
 
