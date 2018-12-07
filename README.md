@@ -2,7 +2,7 @@
 
 This project extends the originally published list of banned books in Germany 
 from 1933 with additional data from the German National Library's GND
-(Gemeinsame Normdatei) or Integrated Authority File. In particular, it enriches
+(_Gemeinsame Normdatei_) or Integrated Authority File. In particular, it enriches
 the data with details about authors and 
 expands occurrences of _"all works by this authors"_ to the actual list of works.
 The output of this project is one big JSON-LD file.
@@ -15,12 +15,12 @@ https://daten.berlin.de/datensaetze/liste-der-verbannten-bücher.
 ## Sources
 
 - **Original JSON Source**: The original JSON source is no longer available
-  (they were part of an older incarnation of the project), except through
+  (it was part of an older incarnation of the project), except through
   archive.org:
   https://web.archive.org/web/20140502133750/http:/daten.berlin.de/datensaetze/liste-der-verbannten-bücher.
   It is also included in this repository at 
   [/data/reference/verbannte-buecher-ref.json](data/reference/verbannte-buecher-ref.json).
-  The original JSON has been published by Wolfgang Both under [CC BY 3.0 DE](https://creativecommons.org/licenses/by/3.0/de/).
+  The original JSON was published by Wolfgang Both under [CC BY 3.0 DE](https://creativecommons.org/licenses/by/3.0/de/).
 - **Coding Da Vinci Project**: There was a project at the first
   [Coding Da Vinci](https://codingdavinci.de) culture hackathon event, which 
   integrated the original JSON data with data from the GND and built an 
@@ -33,7 +33,7 @@ https://daten.berlin.de/datensaetze/liste-der-verbannten-bücher.
   - [/data/source/publication.csv](data/source/publication.csv)
   - [/data/source/publicationPerson.csv](data/source/publicationPerson.csv)
 - **Manual Corrections**: The data extracted from the OCR scans is not always
-  correct. E.g., some ORC strings contain publisher and place of publication,
+  correct. E.g., some OCR strings contain publisher and place of publication,
   but the corresponding extracted fields say "[s.n.]" (_sine nomine_) or
   "[s.l.]" (_sine loco_), respectively. Whenever errors such as those are
   detected, they are corrected in additional files such as 
@@ -56,11 +56,42 @@ The output of the conversion process is a [JSON-LD file](data/target/verbannte_b
 - Publishers are of type [schema:Organization](https://schema.org/Organization), which can also have additional information such as location.
 - Places/Locations are of type [schema:Place](https://schema.org/Place) (usually cities), with links to other representations of the same place (such as the GND or Geonames).
 
-## Errors in the Data and hot to Fix them
+## Errors in the Data and how to Fix them
 
 The linking between entries in the original list and resources in the GND was done in the Coding Da Vinci project. The result is fantastic and I imagine very useful for people interested in the list, but there are errors in the data. Usually such errors are wrong links, where a publication from the list was connected to something that is not actually the same in GND. Because the JSON-LD conversion script uses this data, the resulting JSON-LD data will have the same errors. The hope is that, over time, these errors can be detected and corrected, and new versions of the JSON-LD list will be released.
 
 If you find errors, let us know here on github via by posting an issue. Pull requests are also highly welcome. Ideally, if you want to fix an error, try to fix it in the source data files in [/data/source](data/source).
+
+## Running the Transformation Scripts
+
+The transformation scripts in [/lib](lib) are writte in Ruby. To install their dependencies, you can use [bundler](https://bundler.io).
+
+If you haven't already installed bundler, do:
+
+```shell
+$ gem install bundler
+```
+
+Then, in the project's root, do:
+
+```shell
+$ bundle install
+```
+
+Finally, to perform the transformation, execute the `denormalize` script in `bin`, passing the location of the used the `data` folder as a parameter:
+
+```shell
+$ ruby bin/denormalize data
+reading list ...
+reading publications ...
+reading people ...
+reading mapping ...
+index locations ...
+reading publisher corrections ...
+serializing output ...
+```
+
+If all goes well, the various input files will be read, and the output JSON-LD file will be written in `data/target/verbannte_buecher_neu.json`.
 
 ## License
 
