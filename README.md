@@ -1,5 +1,18 @@
 # "Verbannte Bücher" Extended
 
+<!-- TOC depthFrom:2 -->
+
+- [Introduction](#introduction)
+- [Source Data](#source-data)
+- [Output Data](#output-data)
+- [Errors in the Data and how to Fix them](#errors-in-the-data-and-how-to-fix-them)
+- [Running the Transformation Scripts](#running-the-transformation-scripts)
+- [License](#license)
+
+<!-- /TOC -->
+
+## Introduction
+
 This project extends the originally published list of banned books in Germany 
 from 1933 with additional data from the German National Library's GND
 (_Gemeinsame Normdatei_) or Integrated Authority File. In particular, it enriches
@@ -11,19 +24,6 @@ The current incarnation of the original "Verbannte Bücher" project can be found
 https://www.berlin.de/berlin-im-ueberblick/geschichte/berlin-im-nationalsozialismus/verbannte-buecher ;
 access to the data can be gained through the Open Data portal of Berlin at
 https://daten.berlin.de/datensaetze/liste-der-verbannten-bücher.
-
-## Content
- 
-<!-- TOC depthFrom:2 -->
-
-- [Content](#content)
-- [Source Data](#source-data)
-- [Output Data](#output-data)
-- [Errors in the Data and how to Fix them](#errors-in-the-data-and-how-to-fix-them)
-- [Running the Transformation Scripts](#running-the-transformation-scripts)
-- [License](#license)
-
-<!-- /TOC -->
 
 ## Source Data
 
