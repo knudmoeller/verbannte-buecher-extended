@@ -16,7 +16,7 @@ class Denormalizer
   end
 
   def read_sources
-    puts "reading list ..."
+    log("reading list ...")
     @list = Hash.new
     list_path = File.join(@conf[:data_folder], "source", @conf[:sources][:list])
     document = Nokogiri::XML(File.read(list_path))
@@ -25,7 +25,7 @@ class Denormalizer
       @list[id] = Hash[row.elements.map { |element| [ element.name, element.text ] }]
     end
 
-    puts "reading publications ..."
+    log("reading publications ...")
     @publications = Hash.new
     @publications_by_row = Hash.new
     publication_path = File.join(@conf[:data_folder], "source", @conf[:sources][:publication])
@@ -36,7 +36,7 @@ class Denormalizer
       @publications_by_row[row_id] = row
     end
 
-    puts "reading people ..."
+    log("reading people ...")
     @people = Hash.new
     @people_by_gnd = Hash.new
     people_path = File.join(@conf[:data_folder], "source", @conf[:sources][:people])
@@ -48,7 +48,7 @@ class Denormalizer
       end
     end
 
-    puts "reading mapping ..."
+    log("reading mapping ...")
     @mappings = Hash.new
     @publications_by_author = Hash.new
     mapping_path = File.join(@conf[:data_folder], "source", @conf[:sources][:mapping])
@@ -62,7 +62,7 @@ class Denormalizer
       end
     end
 
-    puts "index locations ..."
+    log("index locations ...")
     @location_index = {}
     @publications.each do |id, publication|
       if (location = publication['place_of_publication'])
@@ -72,7 +72,7 @@ class Denormalizer
       end
     end
 
-    puts "reading publisher corrections ..."
+    log("reading publisher corrections ...")
     corrections_path = File.join(@conf[:data_folder], "source", "publisher_corrections.json")
     corrections = JSON.parse(File.read(corrections_path))
     @conf[:publisher_corrections] = corrections
@@ -114,13 +114,21 @@ class Denormalizer
     
   end
 
+  def log(statement)
+    puts statement if @conf[:verbose]
+  end
+
   def serialize
 
-    puts "serializing output ..."
+    log("serializing output ...")
 
     list_elements = []
-    # Hash[@list.to_a[0..49]].each do |id, entry|
-    @list.each do |id, entry|
+    list = @list
+    if (length = @conf[:length])
+      list = Hash[@list.to_a[0..length-1]]
+    end
+    list.each do |id, entry|
+      log("\tserializing #{id}")
       if (entry_json = handle_entry(entry))
         list_elements << entry_json
       end

@@ -91,17 +91,19 @@ Then, in the project's root, do:
 $ bundle install
 ```
 
-Finally, to perform the transformation, execute the `denormalize` script in `bin`, passing the location of the used the `data` folder as a parameter:
+The actual transformation script is `bin/denormalize`.
+
+```shell
+$ ruby bin/denormalize --help
+Usage: ruby denormalize.rb DATA_FOLDER [options]
+    -v, --[no-]verbose               Run verbosely (default is non-verbose, i.e., no output).
+    -l, --length [INT]               Define how many list entries should be output (default is all).
+```
+
+o perform the transformation, execute `denormalize`, passing the location of the used the `data` folder as a parameter:
 
 ```shell
 $ ruby bin/denormalize data
-reading list ...
-reading publications ...
-reading people ...
-reading mapping ...
-index locations ...
-reading publisher corrections ...
-serializing output ...
 ```
 
 If all goes well, the various input files will be read, and the output JSON-LD file will be written in `data/target/verbannte_buecher_neu.json`.

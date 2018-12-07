@@ -1,14 +1,29 @@
 #! /usr/bin/env ruby
 
+require 'optparse'
 require_relative "../lib/denormalize.rb"
 require_relative "../conf/conf.rb"
 
+options = {}
+usage = "Usage: ruby denormalize.rb DATA_FOLDER [options]"
+OptionParser.new do |opts|
+  opts.banner = usage
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely (default is non-verbose, i.e., no output).") do |v|
+    options[:verbose] = v
+  end
+
+  opts.on("-l", "--length [INT]", Integer, "Define how many list entries should be output (default is all).") do |length|
+    options[:length] = length
+  end
+end.parse!
+
 unless ARGV.count == 1
-  puts "usage: ruby denormalize.rb DATA_FOLDER"
+  puts usage
   exit
 end
 
-conf = Conf.conf
+conf = options.merge(Conf.conf)
 conf[:data_folder] = ARGV[0]
 
 denormalizer = Denormalizer.new({
