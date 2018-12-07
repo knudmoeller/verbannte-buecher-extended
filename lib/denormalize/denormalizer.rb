@@ -72,7 +72,7 @@ class Denormalizer
       end
     end
 
-    puts "read publisher corrections ..."
+    puts "reading publisher corrections ..."
     corrections_path = File.join(@conf[:data_folder], "source", "publisher_corrections.json")
     corrections = JSON.parse(File.read(corrections_path))
     @conf[:publisher_corrections] = corrections
@@ -115,6 +115,8 @@ class Denormalizer
   end
 
   def serialize
+
+    puts "serializing output ..."
 
     list_elements = []
     # Hash[@list.to_a[0..49]].each do |id, entry|
