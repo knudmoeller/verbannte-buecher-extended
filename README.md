@@ -73,11 +73,11 @@ The output of the conversion process is a [JSON-LD file](data/target/verbannte_b
 
 The linking between entries in the original list and resources in the GND was done in the Coding Da Vinci project. The result is fantastic and I imagine very useful for people interested in the list, but there are errors in the data. Usually such errors are wrong links, where a publication from the list was connected to something that is not actually the same in GND. Because the JSON-LD conversion script uses this data, the resulting JSON-LD data will have the same errors. The hope is that, over time, these errors can be detected and corrected, and new versions of the JSON-LD list will be released.
 
-If you find errors, let us know here on github via by posting an issue. Pull requests are also highly welcome. Ideally, if you want to fix an error, try to fix it in the source data files in [/data/source](data/source).
+If you find errors, let us know here on github via by posting an issue. Pull requests are also highly welcome. Ideally, if you want to fix an error, try to fix it in the source data files in [data/source](data/source).
 
 ## Running the Transformation Scripts
 
-The transformation scripts in [/lib](lib) are writte in Ruby. To install their dependencies, you can use [bundler](https://bundler.io).
+The transformation scripts in [lib](lib) are written in Ruby. To install their dependencies, you can use [bundler](https://bundler.io).
 
 If you haven't already installed bundler, do:
 
@@ -100,7 +100,7 @@ Usage: ruby denormalize.rb DATA_FOLDER [options]
     -l, --length [INT]               Define how many list entries should be output (default is all).
 ```
 
-o perform the transformation, execute `denormalize`, passing the location of the used the `data` folder as a parameter:
+To perform the transformation, execute `denormalize`, passing the location of the used the `data` folder as a parameter:
 
 ```shell
 $ ruby bin/denormalize data
