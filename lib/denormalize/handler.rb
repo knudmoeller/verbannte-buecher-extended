@@ -12,7 +12,7 @@ class Handler
   
   def add_same_as(column_header)
     if (same_as_uris = @resource[column_header])
-      same_as_uris = URI.extract(same_as_uris)
+      same_as_uris = URI.extract(same_as_uris.strip)
       if same_as_uris.count > 0
         @json['sameAs'] = [] unless @json['sameAs']
         @json['sameAs'].concat(same_as_uris) 

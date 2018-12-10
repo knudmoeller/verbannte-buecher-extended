@@ -44,7 +44,7 @@ class CollectionHandler < EntryHandler
       json['datePublished'] = publication['issued'] 
     end
     if publication['gnd'].start_with?("http")
-      json['sameAs'] = [ publication['gnd'] ]
+      json['sameAs'] = [ publication['gnd'].strip ]
     end
     return json
   end
