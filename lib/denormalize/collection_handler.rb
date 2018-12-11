@@ -10,11 +10,25 @@ class CollectionHandler < EntryHandler
     end
     @json.merge!({
       "@type" => "Collection" ,
+      "author" => build_author ,
       "name" => build_title
     })
     return @json
   end
   
+  def build_author
+    author = {
+      "@type" => "Person" ,
+      "name" => build_author_name
+    }
+  end
+
+  def build_author_name
+    given_name = @resource['author_firstname']
+    family_name = @resource['author_lastname']
+    return "#{given_name} #{family_name}"
+  end
+
   def build_title
     given_name = @resource['author_firstname']
     family_name = @resource['author_lastname']
