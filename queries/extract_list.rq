@@ -1,0 +1,30 @@
+BASE <https://daten.berlin.de/sites/default/files/data/verbannte_buecher/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+PREFIX verbannt: <../../ref/verbannt.ttl#>
+
+SELECT DISTINCT ?row ?author_name ?editor_name ?entry_title ?type ?part_title ?part_pub_date
+WHERE {
+    ?list a schema:ItemList ;
+        schema:itemListElement ?element .
+
+    ?element verbannt:row ?row ;
+        schema:name ?entry_title ;
+        rdf:type ?type
+    .
+
+    OPTIONAL {
+        ?element schema:hasPart ?part .
+
+        ?part schema:name ?part_title ;
+            schema:datePublished ?part_pub_date .
+    }
+
+    OPTIONAL {
+        ?element schema:author/schema:name ?author_name .
+    }
+    OPTIONAL {
+        ?element schema:editor/schema:name ?editor_name .
+    }
+}
+ORDER BY ?row
