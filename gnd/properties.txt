@@ -1,0 +1,5 @@
+<http://purl.org/dc/elements/1.1/publisher>
+<http://purl.org/dc/elements/1.1/title>
+<http://purl.org/dc/terms/creator>
+<http://rdaregistry.info/Elements/u/P60163>
+<http://rdaregistry.info/Elements/u/P60327>
