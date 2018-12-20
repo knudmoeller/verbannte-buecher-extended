@@ -38,7 +38,7 @@ cat $INPUT | \
             "@graph": 
             [.[] | 
             { 
-                "@type": "CreativeWork" ,
+                "@type": (if (.title | test("Sämtliche")) then "Collection" else "CreativeWork" end) ,
                 name: .title | ltrimstr(" ") | rtrimstr(" ") , 
                 givenName: .authorFirstname | ltrimstr(" ") | rtrimstr(" ") , 
                 familyName: .authorLastname | ltrimstr(" ") | rtrimstr(" ") , 
